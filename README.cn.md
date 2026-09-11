@@ -61,7 +61,7 @@ x install busybox
 
 ## 发行版状态
 
-在 [repology.org](https://repology.org/project/busybox) 上共有 **286** 个发行版报告此项目。**92** 个 ✅ 已是最新上游版本，**146** 个 ⚠️ 使用旧版本。
+在 [repology.org](https://repology.org/project/busybox) 上共有 **287** 个发行版报告此项目。**92** 个 ✅ 已是最新上游版本，**146** 个 ⚠️ 使用旧版本。
 
 | 发行版 | 版本 | 状态 |
 |--------|------|------|
@@ -86,4 +86,4 @@ busybox 的安装元数据由 [x-cmd/install](https://github.com/x-cmd/install) 
 
 本页面的数据（card / loc / scorecard / release）由 [x-cmd-install-action](https://github.com/x-cmd-install/x-cmd-install-action) 自动采集，每日重新生成。**安装行为**（版本选择、平台差异、依赖处理）的改进应提交到上游索引。
 
-_数据快照: `data/card/260911.yml` · 2026-09-11T06:09:36Z._
+_数据快照: `data/card/260911.yml` · 2026-09-11T18:39:42Z._

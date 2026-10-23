@@ -52,12 +52,30 @@ Lowest-scoring checks:
 
 | Window | Since | Releases | Merged PRs | Open PRs | Closed issues | Open issues | Commits |
 |---|---|---:|---:|---:|---:|---:|---:|
-| 30d | 2026-09-22 | 0 | 0 | 0 | 0 | 0 | 0 |
-| last60d | 2026-08-23 | 0 | 0 | 0 | 0 | 1 | 0 |
-| 90d | 2026-07-24 | 0 | 0 | 0 | 0 | 3 | 0 |
-| last180d | 2026-04-25 | 0 | 0 | 1 | 0 | 6 | 0 |
-| 360d | 2025-10-27 | 0 | 0 | 2 | 1 | 16 | 0 |
-| last720d | 2024-11-01 | 0 | 0 | 4 | 4 | 22 | 0 |
+| 30d | 2026-09-23 | 0 | 0 | 0 | 0 | 0 | 0 |
+| last60d | 2026-08-24 | 0 | 0 | 0 | 0 | 1 | 0 |
+| 90d | 2026-07-25 | 0 | 0 | 0 | 0 | 3 | 0 |
+| last180d | 2026-04-26 | 0 | 0 | 1 | 0 | 6 | 0 |
+| 360d | 2025-10-28 | 0 | 0 | 2 | 1 | 16 | 0 |
+| last720d | 2024-11-02 | 0 | 0 | 4 | 4 | 22 | 0 |
+
+## Distribution status
+
+Reported by **275** distros on [repology.org](https://repology.org/project/busybox). **90** are ✅ on the latest upstream release, **137** are ⚠️ on an older version.
+
+| Distro | Version | Status |
+|--------|---------|--------|
+| Debian unstable | `1.37.0` | 🪦 legacy |
+| Debian 14 | `1.37.0` | 🪦 legacy |
+| Debian 13 | `1.37.0` | ⚠️ outdated |
+| Ubuntu 26.04 LTS | `1.37.0` | ⚠️ outdated |
+| Ubuntu 24.04 LTS | `1.36.1` | ✅ latest |
+| Arch | `1.36.1` | ✅ latest |
+| Fedora rawhide | `1.37.0` | ⚠️ outdated |
+| Nix unstable | `1.37.0` | ⚠️ outdated |
+| Void | `1.34.1` | ⚠️ outdated |
+| Alpine edge | `1.38.0` | devel |
+| openSUSE Tumbleweed | `1.38.0` | devel |
 
 ## Improve this data
 
@@ -68,4 +86,4 @@ Install metadata for busybox lives in the [x-cmd/install](https://github.com/x-c
 
 The data on this page (card / loc / scorecard / release) is auto-collected by [x-cmd-install-action](https://github.com/x-cmd-install/x-cmd-install-action) and is regenerated daily. Improvements to *install behaviour* (which version gets installed, platform-specific quirks, dependencies) belong upstream in the index.
 
-_Snapshot: `data/card/261022.yml` · 2026-10-22T05:47:55Z._
+_Snapshot: `data/card/261023.yml` · 2026-10-23T05:52:23Z._

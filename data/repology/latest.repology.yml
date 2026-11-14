@@ -1,3 +1,10 @@
+- repo: chocolatey
+  binname: busybox
+  visiblename: BusyBox-w32
+  version: 6354.0.0
+  origversion: null
+  status: incorrect
+  summary: BusyBox is a single binary that contains many common Unix tools.
 - repo: aur
   srcname: busybox-git
   binname: busybox-git
@@ -10,13 +17,6 @@
     - chocobo1@aur
   licenses:
     - GPL
-- repo: chocolatey
-  binname: busybox
-  visiblename: BusyBox-w32
-  version: 6354.0.0
-  origversion: null
-  status: incorrect
-  summary: BusyBox is a single binary that contains many common Unix tools.
 - repo: gentoo
   srcname: sys-apps/busybox
   visiblename: sys-apps/busybox
@@ -65,27 +65,865 @@
   status: incorrect
   licenses:
     - GPL-2.0-only
-- repo: manjaro_unstable
-  subrepo: core
-  srcname: mkinitcpio-busybox
-  binname: mkinitcpio-busybox
-  visiblename: mkinitcpio-busybox
-  version: 1.36.1
-  origversion: 1.36.1-1
-  status: newest
-  summary: Base initramfs tools
-  licenses:
-    - GPL
+- repo: raspbian_oldstable
+  subrepo: main
+  srcname: busybox
+  binnames:
+    - busybox
+    - busybox-static
+    - busybox-udeb
+    - busybox-syslogd
+    - udhcpc
+    - udhcpd
+  visiblename: busybox
+  version: 1.35.0
+  origversion: 1:1.35.0-4+deb12u1
+  status: outdated
+  maintainers:
+    - debian-boot@lists.debian.org
+    - bootc@debian.org
+    - debian.axhn@manchmal.in-ulm.de
+    - mjt@tls.msk.ru
+  categories:
+    - utils
   vulnerable: true
-- repo: manjaro_unstable
-  subrepo: extra
+- repo: raspbian_stable
+  subrepo: main
+  srcname: busybox
+  binnames:
+    - busybox
+    - busybox-static
+    - busybox-udeb
+    - busybox-syslogd
+    - udhcpc
+    - udhcpd
+  visiblename: busybox
+  version: 1.37.0
+  origversion: 1:1.37.0-6
+  status: outdated
+  maintainers:
+    - debian-boot@lists.debian.org
+    - bootc@debian.org
+    - debian.axhn@manchmal.in-ulm.de
+    - mjt@tls.msk.ru
+  categories:
+    - utils
+  vulnerable: true
+- repo: deepin_23
+  subrepo: main
+  srcname: busybox
+  binnames:
+    - busybox
+    - busybox-static
+    - busybox-udeb
+    - busybox-syslogd
+    - udhcpc
+    - udhcpd
+  visiblename: busybox
+  version: 1.36.1
+  origversion: 1:1.36.1-7
+  status: newest
+  maintainers:
+    - debian-boot@lists.debian.org
+    - bootc@debian.org
+    - debian.axhn@manchmal.in-ulm.de
+    - mjt@tls.msk.ru
+  categories:
+    - utils
+  vulnerable: true
+- repo: alpine_3_22
+  subrepo: main
+  srcname: busybox
+  binname: busybox-binsh
+  visiblename: busybox-binsh
+  version: 1.37.0
+  origversion: 1.37.0-r20
+  status: outdated
+  summary: busybox ash /bin/sh
+  maintainers:
+    - soeren+alpine@soeren-tempel.net
+  licenses:
+    - GPL-2.0-only
+  vulnerable: true
+- repo: chromebrew
+  srcname: busybox
+  visiblename: busybox
+  version: 1.36.0
+  origversion: null
+  status: outdated
+  summary: BusyBox combines tiny versions of many common UNIX utilities into a single small executable.
+  licenses:
+    - GPL-3
+  vulnerable: true
+- repo: alpine_3_17
+  subrepo: main
+  srcname: busybox
+  binname: busybox-extras-openrc
+  visiblename: busybox-extras-openrc
+  version: 1.35.0
+  origversion: 1.35.0-r31
+  status: outdated
+  summary: Size optimized toolbox of many common UNIX utilities
+  maintainers:
+    - soeren+alpine@soeren-tempel.net
+  licenses:
+    - GPL-2.0-only
+  vulnerable: true
+- repo: alpine_3_17
+  subrepo: main
+  srcname: busybox
+  binname: ssl_client
+  visiblename: ssl_client
+  version: 1.35.0
+  origversion: 1.35.0-r31
+  status: outdated
+  summary: EXternal ssl_client for busybox wget
+  maintainers:
+    - soeren+alpine@soeren-tempel.net
+  licenses:
+    - GPL-2.0-only
+  vulnerable: true
+- repo: alpine_3_17
+  subrepo: main
+  srcname: busybox
+  binname: busybox-ifupdown
+  visiblename: busybox-ifupdown
+  version: 1.35.0
+  origversion: 1.35.0-r31
+  status: outdated
+  summary: placeholder package for busybox ifupdown
+  maintainers:
+    - soeren+alpine@soeren-tempel.net
+  licenses:
+    - GPL-2.0-only
+  vulnerable: true
+- repo: alpine_3_17
+  subrepo: main
+  srcname: busybox
+  binname: busybox-doc
+  visiblename: busybox-doc
+  version: 1.35.0
+  origversion: 1.35.0-r31
+  status: outdated
+  summary: Size optimized toolbox of many common UNIX utilities (documentation)
+  maintainers:
+    - soeren+alpine@soeren-tempel.net
+  licenses:
+    - GPL-2.0-only
+  vulnerable: true
+- repo: alpine_3_17
+  subrepo: main
+  srcname: busybox
+  binname: busybox-mdev-openrc
+  visiblename: busybox-mdev-openrc
+  version: 1.35.0
+  origversion: 1.35.0-r31
+  status: outdated
+  summary: Size optimized toolbox of many common UNIX utilities
+  maintainers:
+    - soeren+alpine@soeren-tempel.net
+  licenses:
+    - GPL-2.0-only
+  vulnerable: true
+- repo: alpine_3_17
+  subrepo: main
+  srcname: busybox
+  binname: busybox-openrc
+  visiblename: busybox-openrc
+  version: 1.35.0
+  origversion: 1.35.0-r31
+  status: outdated
+  summary: Size optimized toolbox of many common UNIX utilities
+  maintainers:
+    - soeren+alpine@soeren-tempel.net
+  licenses:
+    - GPL-2.0-only
+  vulnerable: true
+- repo: alpine_3_17
+  subrepo: main
+  srcname: busybox
+  binname: busybox-binsh
+  visiblename: busybox-binsh
+  version: 1.35.0
+  origversion: 1.35.0-r31
+  status: outdated
+  summary: busybox ash /bin/sh
+  maintainers:
+    - soeren+alpine@soeren-tempel.net
+  licenses:
+    - GPL-2.0-only
+  vulnerable: true
+- repo: alpine_3_17
+  subrepo: main
+  srcname: busybox
+  binname: busybox-suid
+  visiblename: busybox-suid
+  version: 1.35.0
+  origversion: 1.35.0-r31
+  status: outdated
+  summary: suid binaries of Busybox
+  maintainers:
+    - soeren+alpine@soeren-tempel.net
+  licenses:
+    - GPL-2.0-only
+  vulnerable: true
+- repo: alpine_3_17
+  subrepo: main
+  srcname: busybox
+  binname: busybox-extras
+  visiblename: busybox-extras
+  version: 1.35.0
+  origversion: 1.35.0-r31
+  status: outdated
+  summary: Additional binaries of Busybox
+  maintainers:
+    - soeren+alpine@soeren-tempel.net
+  licenses:
+    - GPL-2.0-only
+  vulnerable: true
+- repo: alpine_3_17
+  subrepo: main
+  srcname: busybox
+  binname: busybox-static
+  visiblename: busybox-static
+  version: 1.35.0
+  origversion: 1.35.0-r31
+  status: outdated
+  summary: Statically linked Busybox
+  maintainers:
+    - soeren+alpine@soeren-tempel.net
+  licenses:
+    - GPL-2.0-only
+  vulnerable: true
+- repo: alpine_3_17
+  subrepo: main
+  srcname: busybox
+  binname: busybox
+  visiblename: busybox
+  version: 1.35.0
+  origversion: 1.35.0-r31
+  status: outdated
+  summary: Size optimized toolbox of many common UNIX utilities
+  maintainers:
+    - soeren+alpine@soeren-tempel.net
+  licenses:
+    - GPL-2.0-only
+  vulnerable: true
+- repo: alpine_3_18
+  subrepo: main
   srcname: busybox
   binname: busybox
   visiblename: busybox
   version: 1.36.1
-  origversion: 1.36.1-4
+  origversion: 1.36.1-r7
   status: newest
-  summary: Utilities for rescue and embedded systems
+  summary: Size optimized toolbox of many common UNIX utilities
+  maintainers:
+    - soeren+alpine@soeren-tempel.net
+  licenses:
+    - GPL-2.0-only
+  vulnerable: true
+- repo: alpine_3_18
+  subrepo: main
+  srcname: busybox
+  binname: busybox-binsh
+  visiblename: busybox-binsh
+  version: 1.36.1
+  origversion: 1.36.1-r7
+  status: newest
+  summary: busybox ash /bin/sh
+  maintainers:
+    - soeren+alpine@soeren-tempel.net
+  licenses:
+    - GPL-2.0-only
+  vulnerable: true
+- repo: alpine_3_18
+  subrepo: main
+  srcname: busybox
+  binname: busybox-doc
+  visiblename: busybox-doc
+  version: 1.36.1
+  origversion: 1.36.1-r7
+  status: newest
+  summary: Size optimized toolbox of many common UNIX utilities (documentation)
+  maintainers:
+    - soeren+alpine@soeren-tempel.net
+  licenses:
+    - GPL-2.0-only
+  vulnerable: true
+- repo: alpine_3_18
+  subrepo: main
+  srcname: busybox
+  binname: busybox-extras
+  visiblename: busybox-extras
+  version: 1.36.1
+  origversion: 1.36.1-r7
+  status: newest
+  summary: Additional binaries of Busybox
+  maintainers:
+    - soeren+alpine@soeren-tempel.net
+  licenses:
+    - GPL-2.0-only
+  vulnerable: true
+- repo: alpine_3_18
+  subrepo: main
+  srcname: busybox
+  binname: busybox-extras-openrc
+  visiblename: busybox-extras-openrc
+  version: 1.36.1
+  origversion: 1.36.1-r7
+  status: newest
+  summary: Size optimized toolbox of many common UNIX utilities
+  maintainers:
+    - soeren+alpine@soeren-tempel.net
+  licenses:
+    - GPL-2.0-only
+  vulnerable: true
+- repo: alpine_3_18
+  subrepo: main
+  srcname: busybox
+  binname: busybox-ifupdown
+  visiblename: busybox-ifupdown
+  version: 1.36.1
+  origversion: 1.36.1-r7
+  status: newest
+  summary: placeholder package for busybox ifupdown
+  maintainers:
+    - soeren+alpine@soeren-tempel.net
+  licenses:
+    - GPL-2.0-only
+  vulnerable: true
+- repo: alpine_3_23
+  subrepo: main
+  srcname: busybox
+  binname: busybox-suid
+  visiblename: busybox-suid
+  version: 1.37.0
+  origversion: 1.37.0-r30
+  status: outdated
+  summary: suid binaries of Busybox
+  maintainers:
+    - soeren+alpine@soeren-tempel.net
+  licenses:
+    - GPL-2.0-only
+  vulnerable: true
+- repo: alpine_3_18
+  subrepo: main
+  srcname: busybox
+  binname: busybox-mdev-openrc
+  visiblename: busybox-mdev-openrc
+  version: 1.36.1
+  origversion: 1.36.1-r7
+  status: newest
+  summary: Size optimized toolbox of many common UNIX utilities
+  maintainers:
+    - soeren+alpine@soeren-tempel.net
+  licenses:
+    - GPL-2.0-only
+  vulnerable: true
+- repo: alpine_3_18
+  subrepo: main
+  srcname: busybox
+  binname: busybox-openrc
+  visiblename: busybox-openrc
+  version: 1.36.1
+  origversion: 1.36.1-r7
+  status: newest
+  summary: Size optimized toolbox of many common UNIX utilities
+  maintainers:
+    - soeren+alpine@soeren-tempel.net
+  licenses:
+    - GPL-2.0-only
+  vulnerable: true
+- repo: alpine_3_18
+  subrepo: main
+  srcname: busybox
+  binname: busybox-static
+  visiblename: busybox-static
+  version: 1.36.1
+  origversion: 1.36.1-r7
+  status: newest
+  summary: Statically linked Busybox
+  maintainers:
+    - soeren+alpine@soeren-tempel.net
+  licenses:
+    - GPL-2.0-only
+  vulnerable: true
+- repo: alpine_3_18
+  subrepo: main
+  srcname: busybox
+  binname: busybox-suid
+  visiblename: busybox-suid
+  version: 1.36.1
+  origversion: 1.36.1-r7
+  status: newest
+  summary: suid binaries of Busybox
+  maintainers:
+    - soeren+alpine@soeren-tempel.net
+  licenses:
+    - GPL-2.0-only
+  vulnerable: true
+- repo: alpine_3_18
+  subrepo: main
+  srcname: busybox
+  binname: ssl_client
+  visiblename: ssl_client
+  version: 1.36.1
+  origversion: 1.36.1-r7
+  status: newest
+  summary: EXternal ssl_client for busybox wget
+  maintainers:
+    - soeren+alpine@soeren-tempel.net
+  licenses:
+    - GPL-2.0-only
+  vulnerable: true
+- repo: alpine_3_19
+  subrepo: main
+  srcname: busybox
+  binname: ssl_client
+  visiblename: ssl_client
+  version: 1.36.1
+  origversion: 1.36.1-r21
+  status: newest
+  summary: EXternal ssl_client for busybox wget
+  maintainers:
+    - soeren+alpine@soeren-tempel.net
+  licenses:
+    - GPL-2.0-only
+  vulnerable: true
+- repo: alpine_3_19
+  subrepo: main
+  srcname: busybox
+  binname: busybox
+  visiblename: busybox
+  version: 1.36.1
+  origversion: 1.36.1-r21
+  status: newest
+  summary: Size optimized toolbox of many common UNIX utilities
+  maintainers:
+    - soeren+alpine@soeren-tempel.net
+  licenses:
+    - GPL-2.0-only
+  vulnerable: true
+- repo: alpine_3_19
+  subrepo: main
+  srcname: busybox
+  binname: busybox-binsh
+  visiblename: busybox-binsh
+  version: 1.36.1
+  origversion: 1.36.1-r21
+  status: newest
+  summary: busybox ash /bin/sh
+  maintainers:
+    - soeren+alpine@soeren-tempel.net
+  licenses:
+    - GPL-2.0-only
+  vulnerable: true
+- repo: alpine_3_19
+  subrepo: main
+  srcname: busybox
+  binname: busybox-doc
+  visiblename: busybox-doc
+  version: 1.36.1
+  origversion: 1.36.1-r21
+  status: newest
+  summary: Size optimized toolbox of many common UNIX utilities (documentation)
+  maintainers:
+    - soeren+alpine@soeren-tempel.net
+  licenses:
+    - GPL-2.0-only
+  vulnerable: true
+- repo: alpine_3_19
+  subrepo: main
+  srcname: busybox
+  binname: busybox-extras
+  visiblename: busybox-extras
+  version: 1.36.1
+  origversion: 1.36.1-r21
+  status: newest
+  summary: Additional binaries of Busybox
+  maintainers:
+    - soeren+alpine@soeren-tempel.net
+  licenses:
+    - GPL-2.0-only
+  vulnerable: true
+- repo: alpine_3_19
+  subrepo: main
+  srcname: busybox
+  binname: busybox-extras-openrc
+  visiblename: busybox-extras-openrc
+  version: 1.36.1
+  origversion: 1.36.1-r21
+  status: newest
+  summary: Size optimized toolbox of many common UNIX utilities
+  maintainers:
+    - soeren+alpine@soeren-tempel.net
+  licenses:
+    - GPL-2.0-only
+  vulnerable: true
+- repo: alpine_3_19
+  subrepo: main
+  srcname: busybox
+  binname: busybox-ifupdown
+  visiblename: busybox-ifupdown
+  version: 1.36.1
+  origversion: 1.36.1-r21
+  status: newest
+  summary: placeholder package for busybox ifupdown
+  maintainers:
+    - soeren+alpine@soeren-tempel.net
+  licenses:
+    - GPL-2.0-only
+  vulnerable: true
+- repo: alpine_3_19
+  subrepo: main
+  srcname: busybox
+  binname: busybox-mdev-openrc
+  visiblename: busybox-mdev-openrc
+  version: 1.36.1
+  origversion: 1.36.1-r21
+  status: newest
+  summary: Size optimized toolbox of many common UNIX utilities
+  maintainers:
+    - soeren+alpine@soeren-tempel.net
+  licenses:
+    - GPL-2.0-only
+  vulnerable: true
+- repo: alpine_3_19
+  subrepo: main
+  srcname: busybox
+  binname: busybox-openrc
+  visiblename: busybox-openrc
+  version: 1.36.1
+  origversion: 1.36.1-r21
+  status: newest
+  summary: Size optimized toolbox of many common UNIX utilities
+  maintainers:
+    - soeren+alpine@soeren-tempel.net
+  licenses:
+    - GPL-2.0-only
+  vulnerable: true
+- repo: alpine_3_19
+  subrepo: main
+  srcname: busybox
+  binname: busybox-static
+  visiblename: busybox-static
+  version: 1.36.1
+  origversion: 1.36.1-r21
+  status: newest
+  summary: Statically linked Busybox
+  maintainers:
+    - soeren+alpine@soeren-tempel.net
+  licenses:
+    - GPL-2.0-only
+  vulnerable: true
+- repo: cygwin
+  srcname: busybox
+  binname: busybox
+  visiblename: busybox
+  version: 1.36.1
+  origversion: 1.36.1-2
+  status: newest
+  summary: Tiny utilities in a single executable
+  maintainers:
+    - christian.franke@cygwin
+  licenses:
+    - GPL-2.0-only
+  categories:
+    - Shells
+  vulnerable: true
+- repo: alpine_3_19
+  subrepo: main
+  srcname: busybox
+  binname: busybox-suid
+  visiblename: busybox-suid
+  version: 1.36.1
+  origversion: 1.36.1-r21
+  status: newest
+  summary: suid binaries of Busybox
+  maintainers:
+    - soeren+alpine@soeren-tempel.net
+  licenses:
+    - GPL-2.0-only
+  vulnerable: true
+- repo: alpine_3_20
+  subrepo: main
+  srcname: busybox
+  binname: busybox
+  visiblename: busybox
+  version: 1.36.1
+  origversion: 1.36.1-r31
+  status: newest
+  summary: Size optimized toolbox of many common UNIX utilities
+  maintainers:
+    - soeren+alpine@soeren-tempel.net
+  licenses:
+    - GPL-2.0-only
+  vulnerable: true
+- repo: alpine_3_20
+  subrepo: main
+  srcname: busybox
+  binname: busybox-binsh
+  visiblename: busybox-binsh
+  version: 1.36.1
+  origversion: 1.36.1-r31
+  status: newest
+  summary: busybox ash /bin/sh
+  maintainers:
+    - soeren+alpine@soeren-tempel.net
+  licenses:
+    - GPL-2.0-only
+  vulnerable: true
+- repo: alpine_3_20
+  subrepo: main
+  srcname: busybox
+  binname: busybox-doc
+  visiblename: busybox-doc
+  version: 1.36.1
+  origversion: 1.36.1-r31
+  status: newest
+  summary: Size optimized toolbox of many common UNIX utilities (documentation)
+  maintainers:
+    - soeren+alpine@soeren-tempel.net
+  licenses:
+    - GPL-2.0-only
+  vulnerable: true
+- repo: alpine_3_20
+  subrepo: main
+  srcname: busybox
+  binname: busybox-extras
+  visiblename: busybox-extras
+  version: 1.36.1
+  origversion: 1.36.1-r31
+  status: newest
+  summary: Additional binaries of Busybox
+  maintainers:
+    - soeren+alpine@soeren-tempel.net
+  licenses:
+    - GPL-2.0-only
+  vulnerable: true
+- repo: alpine_3_20
+  subrepo: main
+  srcname: busybox
+  binname: busybox-extras-openrc
+  visiblename: busybox-extras-openrc
+  version: 1.36.1
+  origversion: 1.36.1-r31
+  status: newest
+  summary: Size optimized toolbox of many common UNIX utilities
+  maintainers:
+    - soeren+alpine@soeren-tempel.net
+  licenses:
+    - GPL-2.0-only
+  vulnerable: true
+- repo: alpine_3_20
+  subrepo: main
+  srcname: busybox
+  binname: busybox-ifupdown
+  visiblename: busybox-ifupdown
+  version: 1.36.1
+  origversion: 1.36.1-r31
+  status: newest
+  summary: placeholder package for busybox ifupdown
+  maintainers:
+    - soeren+alpine@soeren-tempel.net
+  licenses:
+    - GPL-2.0-only
+  vulnerable: true
+- repo: alpine_3_20
+  subrepo: main
+  srcname: busybox
+  binname: busybox-mdev-openrc
+  visiblename: busybox-mdev-openrc
+  version: 1.36.1
+  origversion: 1.36.1-r31
+  status: newest
+  summary: Size optimized toolbox of many common UNIX utilities
+  maintainers:
+    - soeren+alpine@soeren-tempel.net
+  licenses:
+    - GPL-2.0-only
+  vulnerable: true
+- repo: alpine_3_20
+  subrepo: main
+  srcname: busybox
+  binname: busybox-openrc
+  visiblename: busybox-openrc
+  version: 1.36.1
+  origversion: 1.36.1-r31
+  status: newest
+  summary: Size optimized toolbox of many common UNIX utilities
+  maintainers:
+    - soeren+alpine@soeren-tempel.net
+  licenses:
+    - GPL-2.0-only
+  vulnerable: true
+- repo: alpine_3_20
+  subrepo: main
+  srcname: busybox
+  binname: busybox-static
+  visiblename: busybox-static
+  version: 1.36.1
+  origversion: 1.36.1-r31
+  status: newest
+  summary: Statically linked Busybox
+  maintainers:
+    - soeren+alpine@soeren-tempel.net
+  licenses:
+    - GPL-2.0-only
+  vulnerable: true
+- repo: cygwin
+  srcname: busybox
+  binname: busybox-debuginfo
+  visiblename: busybox-debuginfo
+  version: 1.36.1
+  origversion: 1.36.1-2
+  status: newest
+  summary: Tiny utilities in a single executable
+  maintainers:
+    - christian.franke@cygwin
+  licenses:
+    - GPL-2.0-only
+  categories:
+    - Debug
+  vulnerable: true
+- repo: alpine_3_20
+  subrepo: main
+  srcname: busybox
+  binname: busybox-suid
+  visiblename: busybox-suid
+  version: 1.36.1
+  origversion: 1.36.1-r31
+  status: newest
+  summary: suid binaries of Busybox
+  maintainers:
+    - soeren+alpine@soeren-tempel.net
+  licenses:
+    - GPL-2.0-only
+  vulnerable: true
+- repo: alpine_3_20
+  subrepo: main
+  srcname: busybox
+  binname: ssl_client
+  visiblename: ssl_client
+  version: 1.36.1
+  origversion: 1.36.1-r31
+  status: newest
+  summary: EXternal ssl_client for busybox wget
+  maintainers:
+    - soeren+alpine@soeren-tempel.net
+  licenses:
+    - GPL-2.0-only
+  vulnerable: true
+- repo: alpine_3_21
+  subrepo: main
+  srcname: busybox
+  binname: busybox
+  visiblename: busybox
+  version: 1.37.0
+  origversion: 1.37.0-r14
+  status: outdated
+  summary: Size optimized toolbox of many common UNIX utilities
+  maintainers:
+    - soeren+alpine@soeren-tempel.net
+  licenses:
+    - GPL-2.0-only
+  vulnerable: true
+- repo: alpine_3_21
+  subrepo: main
+  srcname: busybox
+  binname: busybox-binsh
+  visiblename: busybox-binsh
+  version: 1.37.0
+  origversion: 1.37.0-r14
+  status: outdated
+  summary: busybox ash /bin/sh
+  maintainers:
+    - soeren+alpine@soeren-tempel.net
+  licenses:
+    - GPL-2.0-only
+  vulnerable: true
+- repo: alpine_3_21
+  subrepo: main
+  srcname: busybox
+  binname: busybox-doc
+  visiblename: busybox-doc
+  version: 1.37.0
+  origversion: 1.37.0-r14
+  status: outdated
+  summary: Size optimized toolbox of many common UNIX utilities (documentation)
+  maintainers:
+    - soeren+alpine@soeren-tempel.net
+  licenses:
+    - GPL-2.0-only
+  vulnerable: true
+- repo: alpine_3_21
+  subrepo: main
+  srcname: busybox
+  binname: busybox-extras
+  visiblename: busybox-extras
+  version: 1.37.0
+  origversion: 1.37.0-r14
+  status: outdated
+  summary: Additional binaries of Busybox
+  maintainers:
+    - soeren+alpine@soeren-tempel.net
+  licenses:
+    - GPL-2.0-only
+  vulnerable: true
+- repo: alpine_3_21
+  subrepo: main
+  srcname: busybox
+  binname: busybox-extras-openrc
+  visiblename: busybox-extras-openrc
+  version: 1.37.0
+  origversion: 1.37.0-r14
+  status: outdated
+  summary: Size optimized toolbox of many common UNIX utilities
+  maintainers:
+    - soeren+alpine@soeren-tempel.net
+  licenses:
+    - GPL-2.0-only
+  vulnerable: true
+- repo: alpine_3_21
+  subrepo: main
+  srcname: busybox
+  binname: busybox-ifupdown
+  visiblename: busybox-ifupdown
+  version: 1.37.0
+  origversion: 1.37.0-r14
+  status: outdated
+  summary: placeholder package for busybox ifupdown
+  maintainers:
+    - soeren+alpine@soeren-tempel.net
+  licenses:
+    - GPL-2.0-only
+  vulnerable: true
+- repo: alpine_3_21
+  subrepo: main
+  srcname: busybox
+  binname: busybox-mdev-openrc
+  visiblename: busybox-mdev-openrc
+  version: 1.37.0
+  origversion: 1.37.0-r14
+  status: outdated
+  summary: Size optimized toolbox of many common UNIX utilities
+  maintainers:
+    - soeren+alpine@soeren-tempel.net
+  licenses:
+    - GPL-2.0-only
+  vulnerable: true
+- repo: alpine_3_21
+  subrepo: main
+  srcname: busybox
+  binname: busybox-openrc
+  visiblename: busybox-openrc
+  version: 1.37.0
+  origversion: 1.37.0-r14
+  status: outdated
+  summary: Size optimized toolbox of many common UNIX utilities
+  maintainers:
+    - soeren+alpine@soeren-tempel.net
   licenses:
     - GPL-2.0-only
   vulnerable: true
@@ -103,6 +941,132 @@
     - GPL-2.0-only
   categories:
     - Shells
+  vulnerable: true
+- repo: alpine_3_21
+  subrepo: main
+  srcname: busybox
+  binname: busybox-static
+  visiblename: busybox-static
+  version: 1.37.0
+  origversion: 1.37.0-r14
+  status: outdated
+  summary: Statically linked Busybox
+  maintainers:
+    - soeren+alpine@soeren-tempel.net
+  licenses:
+    - GPL-2.0-only
+  vulnerable: true
+- repo: alpine_3_21
+  subrepo: main
+  srcname: busybox
+  binname: busybox-suid
+  visiblename: busybox-suid
+  version: 1.37.0
+  origversion: 1.37.0-r14
+  status: outdated
+  summary: suid binaries of Busybox
+  maintainers:
+    - soeren+alpine@soeren-tempel.net
+  licenses:
+    - GPL-2.0-only
+  vulnerable: true
+- repo: alpine_3_21
+  subrepo: main
+  srcname: busybox
+  binname: ssl_client
+  visiblename: ssl_client
+  version: 1.37.0
+  origversion: 1.37.0-r14
+  status: outdated
+  summary: External ssl_client for busybox wget
+  maintainers:
+    - soeren+alpine@soeren-tempel.net
+  licenses:
+    - GPL-2.0-only
+  vulnerable: true
+- repo: alpine_3_22
+  subrepo: main
+  srcname: busybox
+  binname: busybox
+  visiblename: busybox
+  version: 1.37.0
+  origversion: 1.37.0-r20
+  status: outdated
+  summary: Size optimized toolbox of many common UNIX utilities
+  maintainers:
+    - soeren+alpine@soeren-tempel.net
+  licenses:
+    - GPL-2.0-only
+  vulnerable: true
+- repo: alpine_3_22
+  subrepo: main
+  srcname: busybox
+  binname: busybox-doc
+  visiblename: busybox-doc
+  version: 1.37.0
+  origversion: 1.37.0-r20
+  status: outdated
+  summary: Size optimized toolbox of many common UNIX utilities (documentation)
+  maintainers:
+    - soeren+alpine@soeren-tempel.net
+  licenses:
+    - GPL-2.0-only
+  vulnerable: true
+- repo: alpine_3_22
+  subrepo: main
+  srcname: busybox
+  binname: busybox-extras
+  visiblename: busybox-extras
+  version: 1.37.0
+  origversion: 1.37.0-r20
+  status: outdated
+  summary: Additional binaries of Busybox
+  maintainers:
+    - soeren+alpine@soeren-tempel.net
+  licenses:
+    - GPL-2.0-only
+  vulnerable: true
+- repo: alpine_3_22
+  subrepo: main
+  srcname: busybox
+  binname: busybox-extras-openrc
+  visiblename: busybox-extras-openrc
+  version: 1.37.0
+  origversion: 1.37.0-r20
+  status: outdated
+  summary: Size optimized toolbox of many common UNIX utilities
+  maintainers:
+    - soeren+alpine@soeren-tempel.net
+  licenses:
+    - GPL-2.0-only
+  vulnerable: true
+- repo: alpine_3_22
+  subrepo: main
+  srcname: busybox
+  binname: busybox-ifupdown
+  visiblename: busybox-ifupdown
+  version: 1.37.0
+  origversion: 1.37.0-r20
+  status: outdated
+  summary: placeholder package for busybox ifupdown
+  maintainers:
+    - soeren+alpine@soeren-tempel.net
+  licenses:
+    - GPL-2.0-only
+  vulnerable: true
+- repo: alpine_3_22
+  subrepo: main
+  srcname: busybox
+  binname: busybox-mdev-openrc
+  visiblename: busybox-mdev-openrc
+  version: 1.37.0
+  origversion: 1.37.0-r20
+  status: outdated
+  summary: Size optimized toolbox of many common UNIX utilities
+  maintainers:
+    - soeren+alpine@soeren-tempel.net
+  licenses:
+    - GPL-2.0-only
   vulnerable: true
 - repo: cygwin
   srcname: busybox
@@ -119,83 +1083,13 @@
   categories:
     - Shells
   vulnerable: true
-- repo: alpine_3_17
-  subrepo: main
-  srcname: busybox
-  binname: busybox-extras-openrc
-  visiblename: busybox-extras-openrc
-  version: 1.35.0
-  origversion: 1.35.0-r31
-  status: outdated
-  summary: Size optimized toolbox of many common UNIX utilities
-  maintainers:
-    - soeren+alpine@soeren-tempel.net
-  licenses:
-    - GPL-2.0-only
-  vulnerable: true
-- repo: alpine_3_17
-  subrepo: main
-  srcname: busybox
-  binname: ssl_client
-  visiblename: ssl_client
-  version: 1.35.0
-  origversion: 1.35.0-r31
-  status: outdated
-  summary: EXternal ssl_client for busybox wget
-  maintainers:
-    - soeren+alpine@soeren-tempel.net
-  licenses:
-    - GPL-2.0-only
-  vulnerable: true
-- repo: alpine_3_17
-  subrepo: main
-  srcname: busybox
-  binname: busybox-ifupdown
-  visiblename: busybox-ifupdown
-  version: 1.35.0
-  origversion: 1.35.0-r31
-  status: outdated
-  summary: placeholder package for busybox ifupdown
-  maintainers:
-    - soeren+alpine@soeren-tempel.net
-  licenses:
-    - GPL-2.0-only
-  vulnerable: true
-- repo: alpine_3_17
-  subrepo: main
-  srcname: busybox
-  binname: busybox-doc
-  visiblename: busybox-doc
-  version: 1.35.0
-  origversion: 1.35.0-r31
-  status: outdated
-  summary: Size optimized toolbox of many common UNIX utilities (documentation)
-  maintainers:
-    - soeren+alpine@soeren-tempel.net
-  licenses:
-    - GPL-2.0-only
-  vulnerable: true
-- repo: alpine_3_17
-  subrepo: main
-  srcname: busybox
-  binname: busybox-mdev-openrc
-  visiblename: busybox-mdev-openrc
-  version: 1.35.0
-  origversion: 1.35.0-r31
-  status: outdated
-  summary: Size optimized toolbox of many common UNIX utilities
-  maintainers:
-    - soeren+alpine@soeren-tempel.net
-  licenses:
-    - GPL-2.0-only
-  vulnerable: true
-- repo: alpine_3_17
+- repo: alpine_3_22
   subrepo: main
   srcname: busybox
   binname: busybox-openrc
   visiblename: busybox-openrc
-  version: 1.35.0
-  origversion: 1.35.0-r31
+  version: 1.37.0
+  origversion: 1.37.0-r20
   status: outdated
   summary: Size optimized toolbox of many common UNIX utilities
   maintainers:
@@ -203,55 +1097,13 @@
   licenses:
     - GPL-2.0-only
   vulnerable: true
-- repo: alpine_3_17
-  subrepo: main
-  srcname: busybox
-  binname: busybox-binsh
-  visiblename: busybox-binsh
-  version: 1.35.0
-  origversion: 1.35.0-r31
-  status: outdated
-  summary: busybox ash /bin/sh
-  maintainers:
-    - soeren+alpine@soeren-tempel.net
-  licenses:
-    - GPL-2.0-only
-  vulnerable: true
-- repo: alpine_3_17
-  subrepo: main
-  srcname: busybox
-  binname: busybox-suid
-  visiblename: busybox-suid
-  version: 1.35.0
-  origversion: 1.35.0-r31
-  status: outdated
-  summary: suid binaries of Busybox
-  maintainers:
-    - soeren+alpine@soeren-tempel.net
-  licenses:
-    - GPL-2.0-only
-  vulnerable: true
-- repo: alpine_3_17
-  subrepo: main
-  srcname: busybox
-  binname: busybox-extras
-  visiblename: busybox-extras
-  version: 1.35.0
-  origversion: 1.35.0-r31
-  status: outdated
-  summary: Additional binaries of Busybox
-  maintainers:
-    - soeren+alpine@soeren-tempel.net
-  licenses:
-    - GPL-2.0-only
-  vulnerable: true
-- repo: alpine_3_17
+- repo: alpine_3_22
   subrepo: main
   srcname: busybox
   binname: busybox-static
   visiblename: busybox-static
-  version: 1.35.0
-  origversion: 1.35.0-r31
+  version: 1.37.0
+  origversion: 1.37.0-r20
   status: outdated
   summary: Statically linked Busybox
   maintainers:
@@ -259,13 +1111,41 @@
   licenses:
     - GPL-2.0-only
   vulnerable: true
-- repo: alpine_3_17
+- repo: alpine_3_22
+  subrepo: main
+  srcname: busybox
+  binname: busybox-suid
+  visiblename: busybox-suid
+  version: 1.37.0
+  origversion: 1.37.0-r20
+  status: outdated
+  summary: suid binaries of Busybox
+  maintainers:
+    - soeren+alpine@soeren-tempel.net
+  licenses:
+    - GPL-2.0-only
+  vulnerable: true
+- repo: alpine_3_22
+  subrepo: main
+  srcname: busybox
+  binname: ssl_client
+  visiblename: ssl_client
+  version: 1.37.0
+  origversion: 1.37.0-r20
+  status: outdated
+  summary: External ssl_client for busybox wget
+  maintainers:
+    - soeren+alpine@soeren-tempel.net
+  licenses:
+    - GPL-2.0-only
+  vulnerable: true
+- repo: alpine_3_23
   subrepo: main
   srcname: busybox
   binname: busybox
   visiblename: busybox
-  version: 1.35.0
-  origversion: 1.35.0-r31
+  version: 1.37.0
+  origversion: 1.37.0-r30
   status: outdated
   summary: Size optimized toolbox of many common UNIX utilities
   maintainers:
@@ -273,183 +1153,71 @@
   licenses:
     - GPL-2.0-only
   vulnerable: true
-- repo: alpine_3_18
-  subrepo: main
-  srcname: busybox
-  binname: busybox
-  visiblename: busybox
-  version: 1.36.1
-  origversion: 1.36.1-r7
-  status: newest
-  summary: Size optimized toolbox of many common UNIX utilities
-  maintainers:
-    - soeren+alpine@soeren-tempel.net
-  licenses:
-    - GPL-2.0-only
-  vulnerable: true
-- repo: alpine_3_18
+- repo: alpine_3_23
   subrepo: main
   srcname: busybox
   binname: busybox-binsh
   visiblename: busybox-binsh
-  version: 1.36.1
-  origversion: 1.36.1-r7
-  status: newest
+  version: 1.37.0
+  origversion: 1.37.0-r30
+  status: outdated
   summary: busybox ash /bin/sh
   maintainers:
     - soeren+alpine@soeren-tempel.net
   licenses:
     - GPL-2.0-only
   vulnerable: true
-- repo: alpine_3_18
+- repo: alpine_3_23
   subrepo: main
   srcname: busybox
   binname: busybox-doc
   visiblename: busybox-doc
-  version: 1.36.1
-  origversion: 1.36.1-r7
-  status: newest
+  version: 1.37.0
+  origversion: 1.37.0-r30
+  status: outdated
   summary: Size optimized toolbox of many common UNIX utilities (documentation)
   maintainers:
     - soeren+alpine@soeren-tempel.net
   licenses:
     - GPL-2.0-only
   vulnerable: true
-- repo: alpine_3_18
+- repo: alpine_3_23
   subrepo: main
   srcname: busybox
   binname: busybox-extras
   visiblename: busybox-extras
-  version: 1.36.1
-  origversion: 1.36.1-r7
-  status: newest
+  version: 1.37.0
+  origversion: 1.37.0-r30
+  status: outdated
   summary: Additional binaries of Busybox
   maintainers:
     - soeren+alpine@soeren-tempel.net
   licenses:
     - GPL-2.0-only
   vulnerable: true
-- repo: alpine_3_18
+- repo: alpine_3_23
   subrepo: main
   srcname: busybox
   binname: busybox-extras-openrc
   visiblename: busybox-extras-openrc
-  version: 1.36.1
-  origversion: 1.36.1-r7
-  status: newest
+  version: 1.37.0
+  origversion: 1.37.0-r30
+  status: outdated
   summary: Size optimized toolbox of many common UNIX utilities
   maintainers:
     - soeren+alpine@soeren-tempel.net
   licenses:
     - GPL-2.0-only
   vulnerable: true
-- repo: alpine_3_18
+- repo: alpine_3_23
   subrepo: main
   srcname: busybox
   binname: busybox-ifupdown
   visiblename: busybox-ifupdown
-  version: 1.36.1
-  origversion: 1.36.1-r7
-  status: newest
+  version: 1.37.0
+  origversion: 1.37.0-r30
+  status: outdated
   summary: placeholder package for busybox ifupdown
-  maintainers:
-    - soeren+alpine@soeren-tempel.net
-  licenses:
-    - GPL-2.0-only
-  vulnerable: true
-- repo: alpine_3_18
-  subrepo: main
-  srcname: busybox
-  binname: busybox-mdev-openrc
-  visiblename: busybox-mdev-openrc
-  version: 1.36.1
-  origversion: 1.36.1-r7
-  status: newest
-  summary: Size optimized toolbox of many common UNIX utilities
-  maintainers:
-    - soeren+alpine@soeren-tempel.net
-  licenses:
-    - GPL-2.0-only
-  vulnerable: true
-- repo: alpine_3_18
-  subrepo: main
-  srcname: busybox
-  binname: busybox-openrc
-  visiblename: busybox-openrc
-  version: 1.36.1
-  origversion: 1.36.1-r7
-  status: newest
-  summary: Size optimized toolbox of many common UNIX utilities
-  maintainers:
-    - soeren+alpine@soeren-tempel.net
-  licenses:
-    - GPL-2.0-only
-  vulnerable: true
-- repo: alpine_3_18
-  subrepo: main
-  srcname: busybox
-  binname: busybox-static
-  visiblename: busybox-static
-  version: 1.36.1
-  origversion: 1.36.1-r7
-  status: newest
-  summary: Statically linked Busybox
-  maintainers:
-    - soeren+alpine@soeren-tempel.net
-  licenses:
-    - GPL-2.0-only
-  vulnerable: true
-- repo: alpine_3_18
-  subrepo: main
-  srcname: busybox
-  binname: busybox-suid
-  visiblename: busybox-suid
-  version: 1.36.1
-  origversion: 1.36.1-r7
-  status: newest
-  summary: suid binaries of Busybox
-  maintainers:
-    - soeren+alpine@soeren-tempel.net
-  licenses:
-    - GPL-2.0-only
-  vulnerable: true
-- repo: alpine_3_18
-  subrepo: main
-  srcname: busybox
-  binname: ssl_client
-  visiblename: ssl_client
-  version: 1.36.1
-  origversion: 1.36.1-r7
-  status: newest
-  summary: EXternal ssl_client for busybox wget
-  maintainers:
-    - soeren+alpine@soeren-tempel.net
-  licenses:
-    - GPL-2.0-only
-  vulnerable: true
-- repo: alpine_3_19
-  subrepo: main
-  srcname: busybox
-  binname: busybox
-  visiblename: busybox
-  version: 1.36.1
-  origversion: 1.36.1-r21
-  status: newest
-  summary: Size optimized toolbox of many common UNIX utilities
-  maintainers:
-    - soeren+alpine@soeren-tempel.net
-  licenses:
-    - GPL-2.0-only
-  vulnerable: true
-- repo: alpine_3_19
-  subrepo: main
-  srcname: busybox
-  binname: busybox-binsh
-  visiblename: busybox-binsh
-  version: 1.36.1
-  origversion: 1.36.1-r21
-  status: newest
-  summary: busybox ash /bin/sh
   maintainers:
     - soeren+alpine@soeren-tempel.net
   licenses:
@@ -474,140 +1242,134 @@
     - bootc@debian.org
     - debian.axhn@manchmal.in-ulm.de
   vulnerable: true
-- repo: alpine_3_19
-  subrepo: main
-  srcname: busybox
-  binname: busybox-doc
-  visiblename: busybox-doc
-  version: 1.36.1
-  origversion: 1.36.1-r21
-  status: newest
-  summary: Size optimized toolbox of many common UNIX utilities (documentation)
-  maintainers:
-    - soeren+alpine@soeren-tempel.net
-  licenses:
-    - GPL-2.0-only
-  vulnerable: true
-- repo: alpine_3_19
-  subrepo: main
-  srcname: busybox
-  binname: busybox-extras
-  visiblename: busybox-extras
-  version: 1.36.1
-  origversion: 1.36.1-r21
-  status: newest
-  summary: Additional binaries of Busybox
-  maintainers:
-    - soeren+alpine@soeren-tempel.net
-  licenses:
-    - GPL-2.0-only
-  vulnerable: true
-- repo: alpine_3_19
-  subrepo: main
-  srcname: busybox
-  binname: busybox-extras-openrc
-  visiblename: busybox-extras-openrc
-  version: 1.36.1
-  origversion: 1.36.1-r21
-  status: newest
-  summary: Size optimized toolbox of many common UNIX utilities
-  maintainers:
-    - soeren+alpine@soeren-tempel.net
-  licenses:
-    - GPL-2.0-only
-  vulnerable: true
-- repo: alpine_3_19
-  subrepo: main
-  srcname: busybox
-  binname: busybox-ifupdown
-  visiblename: busybox-ifupdown
-  version: 1.36.1
-  origversion: 1.36.1-r21
-  status: newest
-  summary: placeholder package for busybox ifupdown
-  maintainers:
-    - soeren+alpine@soeren-tempel.net
-  licenses:
-    - GPL-2.0-only
-  vulnerable: true
-- repo: alpine_3_19
+- repo: alpine_3_23
   subrepo: main
   srcname: busybox
   binname: busybox-mdev-openrc
   visiblename: busybox-mdev-openrc
-  version: 1.36.1
-  origversion: 1.36.1-r21
-  status: newest
+  version: 1.37.0
+  origversion: 1.37.0-r30
+  status: outdated
   summary: Size optimized toolbox of many common UNIX utilities
   maintainers:
     - soeren+alpine@soeren-tempel.net
   licenses:
     - GPL-2.0-only
   vulnerable: true
-- repo: alpine_3_19
+- repo: alpine_3_23
   subrepo: main
   srcname: busybox
   binname: busybox-openrc
   visiblename: busybox-openrc
-  version: 1.36.1
-  origversion: 1.36.1-r21
-  status: newest
+  version: 1.37.0
+  origversion: 1.37.0-r30
+  status: outdated
   summary: Size optimized toolbox of many common UNIX utilities
   maintainers:
     - soeren+alpine@soeren-tempel.net
   licenses:
     - GPL-2.0-only
   vulnerable: true
-- repo: alpine_3_19
+- repo: alpine_3_23
   subrepo: main
   srcname: busybox
   binname: busybox-static
   visiblename: busybox-static
-  version: 1.36.1
-  origversion: 1.36.1-r21
-  status: newest
+  version: 1.37.0
+  origversion: 1.37.0-r30
+  status: outdated
   summary: Statically linked Busybox
   maintainers:
     - soeren+alpine@soeren-tempel.net
   licenses:
     - GPL-2.0-only
   vulnerable: true
-- repo: alpine_3_19
-  subrepo: main
+- repo: distri
   srcname: busybox
-  binname: busybox-suid
-  visiblename: busybox-suid
-  version: 1.36.1
-  origversion: 1.36.1-r21
-  status: newest
-  summary: suid binaries of Busybox
-  maintainers:
-    - soeren+alpine@soeren-tempel.net
-  licenses:
-    - GPL-2.0-only
+  binname: busybox
+  visiblename: busybox
+  version: 1.31.1
+  origversion: 1.31.1-7
+  status: outdated
   vulnerable: true
-- repo: alpine_3_19
+- repo: alpine_3_23
   subrepo: main
   srcname: busybox
   binname: ssl_client
   visiblename: ssl_client
-  version: 1.36.1
-  origversion: 1.36.1-r21
-  status: newest
-  summary: EXternal ssl_client for busybox wget
+  version: 1.37.0
+  origversion: 1.37.0-r30
+  status: outdated
+  summary: External ssl_client for busybox wget
   maintainers:
     - soeren+alpine@soeren-tempel.net
   licenses:
     - GPL-2.0-only
   vulnerable: true
-- repo: alpine_3_20
+- repo: alpine_3_24
   subrepo: main
   srcname: busybox
   binname: busybox
   visiblename: busybox
-  version: 1.36.1
-  origversion: 1.36.1-r31
-  status: newest
+  version: 1.37.0
+  origversion: 1.37.0-r31
+  status: outdated
+  summary: Size optimized toolbox of many common UNIX utilities
+  maintainers:
+    - soeren+alpine@soeren-tempel.net
+  licenses:
+    - GPL-2.0-only
+  vulnerable: true
+- repo: alpine_3_24
+  subrepo: main
+  srcname: busybox
+  binname: busybox-binsh
+  visiblename: busybox-binsh
+  version: 1.37.0
+  origversion: 1.37.0-r31
+  status: outdated
+  summary: busybox ash /bin/sh
+  maintainers:
+    - soeren+alpine@soeren-tempel.net
+  licenses:
+    - GPL-2.0-only
+  vulnerable: true
+- repo: alpine_3_24
+  subrepo: main
+  srcname: busybox
+  binname: busybox-doc
+  visiblename: busybox-doc
+  version: 1.37.0
+  origversion: 1.37.0-r31
+  status: outdated
+  summary: Size optimized toolbox of many common UNIX utilities (documentation)
+  maintainers:
+    - soeren+alpine@soeren-tempel.net
+  licenses:
+    - GPL-2.0-only
+  vulnerable: true
+- repo: alpine_3_24
+  subrepo: main
+  srcname: busybox
+  binname: busybox-extras
+  visiblename: busybox-extras
+  version: 1.37.0
+  origversion: 1.37.0-r31
+  status: outdated
+  summary: Additional binaries of Busybox
+  maintainers:
+    - soeren+alpine@soeren-tempel.net
+  licenses:
+    - GPL-2.0-only
+  vulnerable: true
+- repo: alpine_3_24
+  subrepo: main
+  srcname: busybox
+  binname: busybox-extras-openrc
+  visiblename: busybox-extras-openrc
+  version: 1.37.0
+  origversion: 1.37.0-r31
+  status: outdated
   summary: Size optimized toolbox of many common UNIX utilities
   maintainers:
     - soeren+alpine@soeren-tempel.net
@@ -633,766 +1395,6 @@
     - bootc@debian.org
     - debian.axhn@manchmal.in-ulm.de
   vulnerable: true
-- repo: alpine_3_20
-  subrepo: main
-  srcname: busybox
-  binname: busybox-binsh
-  visiblename: busybox-binsh
-  version: 1.36.1
-  origversion: 1.36.1-r31
-  status: newest
-  summary: busybox ash /bin/sh
-  maintainers:
-    - soeren+alpine@soeren-tempel.net
-  licenses:
-    - GPL-2.0-only
-  vulnerable: true
-- repo: alpine_3_20
-  subrepo: main
-  srcname: busybox
-  binname: busybox-doc
-  visiblename: busybox-doc
-  version: 1.36.1
-  origversion: 1.36.1-r31
-  status: newest
-  summary: Size optimized toolbox of many common UNIX utilities (documentation)
-  maintainers:
-    - soeren+alpine@soeren-tempel.net
-  licenses:
-    - GPL-2.0-only
-  vulnerable: true
-- repo: alpine_3_20
-  subrepo: main
-  srcname: busybox
-  binname: busybox-extras
-  visiblename: busybox-extras
-  version: 1.36.1
-  origversion: 1.36.1-r31
-  status: newest
-  summary: Additional binaries of Busybox
-  maintainers:
-    - soeren+alpine@soeren-tempel.net
-  licenses:
-    - GPL-2.0-only
-  vulnerable: true
-- repo: alpine_3_20
-  subrepo: main
-  srcname: busybox
-  binname: busybox-extras-openrc
-  visiblename: busybox-extras-openrc
-  version: 1.36.1
-  origversion: 1.36.1-r31
-  status: newest
-  summary: Size optimized toolbox of many common UNIX utilities
-  maintainers:
-    - soeren+alpine@soeren-tempel.net
-  licenses:
-    - GPL-2.0-only
-  vulnerable: true
-- repo: alpine_3_20
-  subrepo: main
-  srcname: busybox
-  binname: busybox-ifupdown
-  visiblename: busybox-ifupdown
-  version: 1.36.1
-  origversion: 1.36.1-r31
-  status: newest
-  summary: placeholder package for busybox ifupdown
-  maintainers:
-    - soeren+alpine@soeren-tempel.net
-  licenses:
-    - GPL-2.0-only
-  vulnerable: true
-- repo: alpine_3_20
-  subrepo: main
-  srcname: busybox
-  binname: busybox-mdev-openrc
-  visiblename: busybox-mdev-openrc
-  version: 1.36.1
-  origversion: 1.36.1-r31
-  status: newest
-  summary: Size optimized toolbox of many common UNIX utilities
-  maintainers:
-    - soeren+alpine@soeren-tempel.net
-  licenses:
-    - GPL-2.0-only
-  vulnerable: true
-- repo: alpine_3_20
-  subrepo: main
-  srcname: busybox
-  binname: busybox-openrc
-  visiblename: busybox-openrc
-  version: 1.36.1
-  origversion: 1.36.1-r31
-  status: newest
-  summary: Size optimized toolbox of many common UNIX utilities
-  maintainers:
-    - soeren+alpine@soeren-tempel.net
-  licenses:
-    - GPL-2.0-only
-  vulnerable: true
-- repo: alpine_3_20
-  subrepo: main
-  srcname: busybox
-  binname: busybox-static
-  visiblename: busybox-static
-  version: 1.36.1
-  origversion: 1.36.1-r31
-  status: newest
-  summary: Statically linked Busybox
-  maintainers:
-    - soeren+alpine@soeren-tempel.net
-  licenses:
-    - GPL-2.0-only
-  vulnerable: true
-- repo: alpine_3_20
-  subrepo: main
-  srcname: busybox
-  binname: busybox-suid
-  visiblename: busybox-suid
-  version: 1.36.1
-  origversion: 1.36.1-r31
-  status: newest
-  summary: suid binaries of Busybox
-  maintainers:
-    - soeren+alpine@soeren-tempel.net
-  licenses:
-    - GPL-2.0-only
-  vulnerable: true
-- repo: alpine_3_20
-  subrepo: main
-  srcname: busybox
-  binname: ssl_client
-  visiblename: ssl_client
-  version: 1.36.1
-  origversion: 1.36.1-r31
-  status: newest
-  summary: EXternal ssl_client for busybox wget
-  maintainers:
-    - soeren+alpine@soeren-tempel.net
-  licenses:
-    - GPL-2.0-only
-  vulnerable: true
-- repo: deepin_23
-  subrepo: main
-  srcname: busybox
-  binnames:
-    - busybox
-    - busybox-static
-    - busybox-udeb
-    - busybox-syslogd
-    - udhcpc
-    - udhcpd
-  visiblename: busybox
-  version: 1.36.1
-  origversion: 1:1.36.1-7
-  status: newest
-  maintainers:
-    - debian-boot@lists.debian.org
-    - bootc@debian.org
-    - debian.axhn@manchmal.in-ulm.de
-    - mjt@tls.msk.ru
-  categories:
-    - utils
-  vulnerable: true
-- repo: alpine_3_21
-  subrepo: main
-  srcname: busybox
-  binname: busybox
-  visiblename: busybox
-  version: 1.37.0
-  origversion: 1.37.0-r14
-  status: outdated
-  summary: Size optimized toolbox of many common UNIX utilities
-  maintainers:
-    - soeren+alpine@soeren-tempel.net
-  licenses:
-    - GPL-2.0-only
-  vulnerable: true
-- repo: alpine_3_21
-  subrepo: main
-  srcname: busybox
-  binname: busybox-binsh
-  visiblename: busybox-binsh
-  version: 1.37.0
-  origversion: 1.37.0-r14
-  status: outdated
-  summary: busybox ash /bin/sh
-  maintainers:
-    - soeren+alpine@soeren-tempel.net
-  licenses:
-    - GPL-2.0-only
-  vulnerable: true
-- repo: alpine_3_21
-  subrepo: main
-  srcname: busybox
-  binname: busybox-doc
-  visiblename: busybox-doc
-  version: 1.37.0
-  origversion: 1.37.0-r14
-  status: outdated
-  summary: Size optimized toolbox of many common UNIX utilities (documentation)
-  maintainers:
-    - soeren+alpine@soeren-tempel.net
-  licenses:
-    - GPL-2.0-only
-  vulnerable: true
-- repo: alpine_3_21
-  subrepo: main
-  srcname: busybox
-  binname: busybox-extras
-  visiblename: busybox-extras
-  version: 1.37.0
-  origversion: 1.37.0-r14
-  status: outdated
-  summary: Additional binaries of Busybox
-  maintainers:
-    - soeren+alpine@soeren-tempel.net
-  licenses:
-    - GPL-2.0-only
-  vulnerable: true
-- repo: alpine_3_21
-  subrepo: main
-  srcname: busybox
-  binname: busybox-extras-openrc
-  visiblename: busybox-extras-openrc
-  version: 1.37.0
-  origversion: 1.37.0-r14
-  status: outdated
-  summary: Size optimized toolbox of many common UNIX utilities
-  maintainers:
-    - soeren+alpine@soeren-tempel.net
-  licenses:
-    - GPL-2.0-only
-  vulnerable: true
-- repo: alpine_3_21
-  subrepo: main
-  srcname: busybox
-  binname: busybox-ifupdown
-  visiblename: busybox-ifupdown
-  version: 1.37.0
-  origversion: 1.37.0-r14
-  status: outdated
-  summary: placeholder package for busybox ifupdown
-  maintainers:
-    - soeren+alpine@soeren-tempel.net
-  licenses:
-    - GPL-2.0-only
-  vulnerable: true
-- repo: alpine_3_21
-  subrepo: main
-  srcname: busybox
-  binname: busybox-mdev-openrc
-  visiblename: busybox-mdev-openrc
-  version: 1.37.0
-  origversion: 1.37.0-r14
-  status: outdated
-  summary: Size optimized toolbox of many common UNIX utilities
-  maintainers:
-    - soeren+alpine@soeren-tempel.net
-  licenses:
-    - GPL-2.0-only
-  vulnerable: true
-- repo: alpine_3_21
-  subrepo: main
-  srcname: busybox
-  binname: busybox-openrc
-  visiblename: busybox-openrc
-  version: 1.37.0
-  origversion: 1.37.0-r14
-  status: outdated
-  summary: Size optimized toolbox of many common UNIX utilities
-  maintainers:
-    - soeren+alpine@soeren-tempel.net
-  licenses:
-    - GPL-2.0-only
-  vulnerable: true
-- repo: alpine_3_21
-  subrepo: main
-  srcname: busybox
-  binname: busybox-static
-  visiblename: busybox-static
-  version: 1.37.0
-  origversion: 1.37.0-r14
-  status: outdated
-  summary: Statically linked Busybox
-  maintainers:
-    - soeren+alpine@soeren-tempel.net
-  licenses:
-    - GPL-2.0-only
-  vulnerable: true
-- repo: alpine_3_21
-  subrepo: main
-  srcname: busybox
-  binname: busybox-suid
-  visiblename: busybox-suid
-  version: 1.37.0
-  origversion: 1.37.0-r14
-  status: outdated
-  summary: suid binaries of Busybox
-  maintainers:
-    - soeren+alpine@soeren-tempel.net
-  licenses:
-    - GPL-2.0-only
-  vulnerable: true
-- repo: devuan_4_0
-  subrepo: chimaera/main
-  srcname: busybox
-  binnames:
-    - busybox
-    - busybox-static
-    - busybox-udeb
-    - busybox-syslogd
-    - udhcpc
-    - udhcpd
-  visiblename: busybox
-  version: 1.30.1
-  origversion: 1:1.30.1-6
-  status: outdated
-  maintainers:
-    - debian-boot@lists.debian.org
-    - bootc@debian.org
-    - debian.axhn@manchmal.in-ulm.de
-  categories:
-    - utils
-  vulnerable: true
-- repo: parabola
-  subrepo: extra
-  srcname: busybox
-  binname: busybox
-  visiblename: busybox
-  version: 1.36.1
-  origversion: 1.36.1-4
-  status: newest
-  summary: Utilities for rescue and embedded systems
-  licenses:
-    - GPL-2.0-only
-  vulnerable: true
-- repo: alpine_3_21
-  subrepo: main
-  srcname: busybox
-  binname: ssl_client
-  visiblename: ssl_client
-  version: 1.37.0
-  origversion: 1.37.0-r14
-  status: outdated
-  summary: External ssl_client for busybox wget
-  maintainers:
-    - soeren+alpine@soeren-tempel.net
-  licenses:
-    - GPL-2.0-only
-  vulnerable: true
-- repo: alpine_3_22
-  subrepo: main
-  srcname: busybox
-  binname: busybox
-  visiblename: busybox
-  version: 1.37.0
-  origversion: 1.37.0-r20
-  status: outdated
-  summary: Size optimized toolbox of many common UNIX utilities
-  maintainers:
-    - soeren+alpine@soeren-tempel.net
-  licenses:
-    - GPL-2.0-only
-  vulnerable: true
-- repo: alpine_3_22
-  subrepo: main
-  srcname: busybox
-  binname: busybox-binsh
-  visiblename: busybox-binsh
-  version: 1.37.0
-  origversion: 1.37.0-r20
-  status: outdated
-  summary: busybox ash /bin/sh
-  maintainers:
-    - soeren+alpine@soeren-tempel.net
-  licenses:
-    - GPL-2.0-only
-  vulnerable: true
-- repo: alpine_3_22
-  subrepo: main
-  srcname: busybox
-  binname: busybox-doc
-  visiblename: busybox-doc
-  version: 1.37.0
-  origversion: 1.37.0-r20
-  status: outdated
-  summary: Size optimized toolbox of many common UNIX utilities (documentation)
-  maintainers:
-    - soeren+alpine@soeren-tempel.net
-  licenses:
-    - GPL-2.0-only
-  vulnerable: true
-- repo: alpine_3_22
-  subrepo: main
-  srcname: busybox
-  binname: busybox-extras
-  visiblename: busybox-extras
-  version: 1.37.0
-  origversion: 1.37.0-r20
-  status: outdated
-  summary: Additional binaries of Busybox
-  maintainers:
-    - soeren+alpine@soeren-tempel.net
-  licenses:
-    - GPL-2.0-only
-  vulnerable: true
-- repo: alpine_3_22
-  subrepo: main
-  srcname: busybox
-  binname: busybox-extras-openrc
-  visiblename: busybox-extras-openrc
-  version: 1.37.0
-  origversion: 1.37.0-r20
-  status: outdated
-  summary: Size optimized toolbox of many common UNIX utilities
-  maintainers:
-    - soeren+alpine@soeren-tempel.net
-  licenses:
-    - GPL-2.0-only
-  vulnerable: true
-- repo: alpine_3_22
-  subrepo: main
-  srcname: busybox
-  binname: busybox-ifupdown
-  visiblename: busybox-ifupdown
-  version: 1.37.0
-  origversion: 1.37.0-r20
-  status: outdated
-  summary: placeholder package for busybox ifupdown
-  maintainers:
-    - soeren+alpine@soeren-tempel.net
-  licenses:
-    - GPL-2.0-only
-  vulnerable: true
-- repo: alpine_3_22
-  subrepo: main
-  srcname: busybox
-  binname: busybox-mdev-openrc
-  visiblename: busybox-mdev-openrc
-  version: 1.37.0
-  origversion: 1.37.0-r20
-  status: outdated
-  summary: Size optimized toolbox of many common UNIX utilities
-  maintainers:
-    - soeren+alpine@soeren-tempel.net
-  licenses:
-    - GPL-2.0-only
-  vulnerable: true
-- repo: alpine_3_22
-  subrepo: main
-  srcname: busybox
-  binname: busybox-openrc
-  visiblename: busybox-openrc
-  version: 1.37.0
-  origversion: 1.37.0-r20
-  status: outdated
-  summary: Size optimized toolbox of many common UNIX utilities
-  maintainers:
-    - soeren+alpine@soeren-tempel.net
-  licenses:
-    - GPL-2.0-only
-  vulnerable: true
-- repo: alpine_3_22
-  subrepo: main
-  srcname: busybox
-  binname: busybox-static
-  visiblename: busybox-static
-  version: 1.37.0
-  origversion: 1.37.0-r20
-  status: outdated
-  summary: Statically linked Busybox
-  maintainers:
-    - soeren+alpine@soeren-tempel.net
-  licenses:
-    - GPL-2.0-only
-  vulnerable: true
-- repo: devuan_unstable
-  subrepo: unstable/main
-  srcname: busybox
-  binnames:
-    - busybox
-    - busybox-static
-    - busybox-udeb
-    - busybox-syslogd
-    - udhcpc
-    - udhcpd
-  visiblename: busybox
-  version: 1.38.0
-  origversion: 1:1.38.0-3
-  status: devel
-  maintainers:
-    - debian-boot@lists.debian.org
-    - bootc@debian.org
-    - debian.axhn@manchmal.in-ulm.de
-    - mjt@tls.msk.ru
-  categories:
-    - utils
-  vulnerable: true
-- repo: alpine_3_22
-  subrepo: main
-  srcname: busybox
-  binname: busybox-suid
-  visiblename: busybox-suid
-  version: 1.37.0
-  origversion: 1.37.0-r20
-  status: outdated
-  summary: suid binaries of Busybox
-  maintainers:
-    - soeren+alpine@soeren-tempel.net
-  licenses:
-    - GPL-2.0-only
-  vulnerable: true
-- repo: alpine_3_22
-  subrepo: main
-  srcname: busybox
-  binname: ssl_client
-  visiblename: ssl_client
-  version: 1.37.0
-  origversion: 1.37.0-r20
-  status: outdated
-  summary: External ssl_client for busybox wget
-  maintainers:
-    - soeren+alpine@soeren-tempel.net
-  licenses:
-    - GPL-2.0-only
-  vulnerable: true
-- repo: alpine_3_23
-  subrepo: main
-  srcname: busybox
-  binname: busybox
-  visiblename: busybox
-  version: 1.37.0
-  origversion: 1.37.0-r30
-  status: outdated
-  summary: Size optimized toolbox of many common UNIX utilities
-  maintainers:
-    - soeren+alpine@soeren-tempel.net
-  licenses:
-    - GPL-2.0-only
-  vulnerable: true
-- repo: alpine_3_23
-  subrepo: main
-  srcname: busybox
-  binname: busybox-binsh
-  visiblename: busybox-binsh
-  version: 1.37.0
-  origversion: 1.37.0-r30
-  status: outdated
-  summary: busybox ash /bin/sh
-  maintainers:
-    - soeren+alpine@soeren-tempel.net
-  licenses:
-    - GPL-2.0-only
-  vulnerable: true
-- repo: alpine_3_23
-  subrepo: main
-  srcname: busybox
-  binname: busybox-doc
-  visiblename: busybox-doc
-  version: 1.37.0
-  origversion: 1.37.0-r30
-  status: outdated
-  summary: Size optimized toolbox of many common UNIX utilities (documentation)
-  maintainers:
-    - soeren+alpine@soeren-tempel.net
-  licenses:
-    - GPL-2.0-only
-  vulnerable: true
-- repo: alpine_3_23
-  subrepo: main
-  srcname: busybox
-  binname: busybox-extras
-  visiblename: busybox-extras
-  version: 1.37.0
-  origversion: 1.37.0-r30
-  status: outdated
-  summary: Additional binaries of Busybox
-  maintainers:
-    - soeren+alpine@soeren-tempel.net
-  licenses:
-    - GPL-2.0-only
-  vulnerable: true
-- repo: alpine_3_23
-  subrepo: main
-  srcname: busybox
-  binname: busybox-extras-openrc
-  visiblename: busybox-extras-openrc
-  version: 1.37.0
-  origversion: 1.37.0-r30
-  status: outdated
-  summary: Size optimized toolbox of many common UNIX utilities
-  maintainers:
-    - soeren+alpine@soeren-tempel.net
-  licenses:
-    - GPL-2.0-only
-  vulnerable: true
-- repo: alpine_3_23
-  subrepo: main
-  srcname: busybox
-  binname: busybox-ifupdown
-  visiblename: busybox-ifupdown
-  version: 1.37.0
-  origversion: 1.37.0-r30
-  status: outdated
-  summary: placeholder package for busybox ifupdown
-  maintainers:
-    - soeren+alpine@soeren-tempel.net
-  licenses:
-    - GPL-2.0-only
-  vulnerable: true
-- repo: alpine_3_23
-  subrepo: main
-  srcname: busybox
-  binname: busybox-mdev-openrc
-  visiblename: busybox-mdev-openrc
-  version: 1.37.0
-  origversion: 1.37.0-r30
-  status: outdated
-  summary: Size optimized toolbox of many common UNIX utilities
-  maintainers:
-    - soeren+alpine@soeren-tempel.net
-  licenses:
-    - GPL-2.0-only
-  vulnerable: true
-- repo: alpine_3_23
-  subrepo: main
-  srcname: busybox
-  binname: busybox-openrc
-  visiblename: busybox-openrc
-  version: 1.37.0
-  origversion: 1.37.0-r30
-  status: outdated
-  summary: Size optimized toolbox of many common UNIX utilities
-  maintainers:
-    - soeren+alpine@soeren-tempel.net
-  licenses:
-    - GPL-2.0-only
-  vulnerable: true
-- repo: reactos
-  srcname: busybox
-  binname: busybox
-  visiblename: BusyBox
-  version: 1.38.0
-  origversion: null
-  status: devel
-  summary: WIN32 port of BusyBox, a single executable that provides many common Unix tools including a POSIX shell
-  licenses:
-    - GPLv2
-  vulnerable: true
-- repo: alpine_3_23
-  subrepo: main
-  srcname: busybox
-  binname: busybox-static
-  visiblename: busybox-static
-  version: 1.37.0
-  origversion: 1.37.0-r30
-  status: outdated
-  summary: Statically linked Busybox
-  maintainers:
-    - soeren+alpine@soeren-tempel.net
-  licenses:
-    - GPL-2.0-only
-  vulnerable: true
-- repo: alpine_3_23
-  subrepo: main
-  srcname: busybox
-  binname: busybox-suid
-  visiblename: busybox-suid
-  version: 1.37.0
-  origversion: 1.37.0-r30
-  status: outdated
-  summary: suid binaries of Busybox
-  maintainers:
-    - soeren+alpine@soeren-tempel.net
-  licenses:
-    - GPL-2.0-only
-  vulnerable: true
-- repo: alpine_3_23
-  subrepo: main
-  srcname: busybox
-  binname: ssl_client
-  visiblename: ssl_client
-  version: 1.37.0
-  origversion: 1.37.0-r30
-  status: outdated
-  summary: External ssl_client for busybox wget
-  maintainers:
-    - soeren+alpine@soeren-tempel.net
-  licenses:
-    - GPL-2.0-only
-  vulnerable: true
-- repo: alpine_3_24
-  subrepo: main
-  srcname: busybox
-  binname: busybox
-  visiblename: busybox
-  version: 1.37.0
-  origversion: 1.37.0-r31
-  status: outdated
-  summary: Size optimized toolbox of many common UNIX utilities
-  maintainers:
-    - soeren+alpine@soeren-tempel.net
-  licenses:
-    - GPL-2.0-only
-  vulnerable: true
-- repo: alpine_3_24
-  subrepo: main
-  srcname: busybox
-  binname: busybox-binsh
-  visiblename: busybox-binsh
-  version: 1.37.0
-  origversion: 1.37.0-r31
-  status: outdated
-  summary: busybox ash /bin/sh
-  maintainers:
-    - soeren+alpine@soeren-tempel.net
-  licenses:
-    - GPL-2.0-only
-  vulnerable: true
-- repo: alpine_3_24
-  subrepo: main
-  srcname: busybox
-  binname: busybox-doc
-  visiblename: busybox-doc
-  version: 1.37.0
-  origversion: 1.37.0-r31
-  status: outdated
-  summary: Size optimized toolbox of many common UNIX utilities (documentation)
-  maintainers:
-    - soeren+alpine@soeren-tempel.net
-  licenses:
-    - GPL-2.0-only
-  vulnerable: true
-- repo: alpine_3_24
-  subrepo: main
-  srcname: busybox
-  binname: busybox-extras
-  visiblename: busybox-extras
-  version: 1.37.0
-  origversion: 1.37.0-r31
-  status: outdated
-  summary: Additional binaries of Busybox
-  maintainers:
-    - soeren+alpine@soeren-tempel.net
-  licenses:
-    - GPL-2.0-only
-  vulnerable: true
-- repo: alpine_3_24
-  subrepo: main
-  srcname: busybox
-  binname: busybox-extras-openrc
-  visiblename: busybox-extras-openrc
-  version: 1.37.0
-  origversion: 1.37.0-r31
-  status: outdated
-  summary: Size optimized toolbox of many common UNIX utilities
-  maintainers:
-    - soeren+alpine@soeren-tempel.net
-  licenses:
-    - GPL-2.0-only
-  vulnerable: true
 - repo: alpine_3_24
   subrepo: main
   srcname: busybox
@@ -1420,26 +1422,6 @@
     - soeren+alpine@soeren-tempel.net
   licenses:
     - GPL-2.0-only
-  vulnerable: true
-- repo: deepin_25
-  subrepo: main
-  srcname: busybox
-  binnames:
-    - busybox
-    - busybox-static
-    - busybox-udeb
-    - busybox-syslogd
-    - udhcpc
-    - udhcpd
-  visiblename: busybox
-  version: 1.37.0
-  origversion: 1:1.37.0-10.1deepin3
-  status: outdated
-  maintainers:
-    - debian-boot@lists.debian.org
-    - bootc@debian.org
-    - debian.axhn@manchmal.in-ulm.de
-    - mjt@tls.msk.ru
   vulnerable: true
 - repo: alpine_3_24
   subrepo: main
@@ -1825,16 +1807,6 @@
     - debian.axhn@manchmal.in-ulm.de
     - mjt@tls.msk.ru
   vulnerable: true
-- repo: tincan
-  subrepo: core
-  srcname: busybox
-  visiblename: busybox
-  version: 1.36.1
-  origversion: null
-  status: newest
-  maintainers:
-    - avs.origami@gmail.com
-  vulnerable: true
 - repo: apertis_v2025
   subrepo: v2025/target
   srcname: busybox
@@ -1911,6 +1883,18 @@
     - mjt@tls.msk.ru
   vulnerable: true
 - repo: arch
+  subrepo: core
+  srcname: mkinitcpio-busybox
+  binname: mkinitcpio-busybox
+  visiblename: mkinitcpio-busybox
+  version: 1.36.1
+  origversion: 1.36.1-1
+  status: newest
+  summary: Base initramfs tools
+  licenses:
+    - GPL
+  vulnerable: true
+- repo: arch
   subrepo: extra
   srcname: busybox
   binname: busybox
@@ -1922,17 +1906,14 @@
   licenses:
     - GPL-2.0-only
   vulnerable: true
-- repo: arch
-  subrepo: core
-  srcname: mkinitcpio-busybox
-  binname: mkinitcpio-busybox
-  visiblename: mkinitcpio-busybox
-  version: 1.36.1
-  origversion: 1.36.1-1
-  status: newest
-  summary: Base initramfs tools
+- repo: gobolinux
+  srcname: BusyBox
+  visiblename: BusyBox
+  version: 1.31.1
+  origversion: null
+  status: outdated
   licenses:
-    - GPL
+    - GNU GPL 2
   vulnerable: true
 - repo: artix
   subrepo: system
@@ -1958,46 +1939,6 @@
     - cem@carbslinux.org
   licenses:
     - GPL-2.0-only
-  vulnerable: true
-- repo: chromebrew
-  srcname: busybox
-  visiblename: busybox
-  version: 1.36.0
-  origversion: null
-  status: outdated
-  summary: BusyBox combines tiny versions of many common UNIX utilities into a single small executable.
-  licenses:
-    - GPL-3
-  vulnerable: true
-- repo: cygwin
-  srcname: busybox
-  binname: busybox
-  visiblename: busybox
-  version: 1.36.1
-  origversion: 1.36.1-2
-  status: newest
-  summary: Tiny utilities in a single executable
-  maintainers:
-    - christian.franke@cygwin
-  licenses:
-    - GPL-2.0-only
-  categories:
-    - Shells
-  vulnerable: true
-- repo: cygwin
-  srcname: busybox
-  binname: busybox-debuginfo
-  visiblename: busybox-debuginfo
-  version: 1.36.1
-  origversion: 1.36.1-2
-  status: newest
-  summary: Tiny utilities in a single executable
-  maintainers:
-    - christian.franke@cygwin
-  licenses:
-    - GPL-2.0-only
-  categories:
-    - Debug
   vulnerable: true
 - repo: debian_11
   subrepo: bullseye/main
@@ -2195,18 +2136,6 @@
   categories:
     - utils
   vulnerable: true
-- repo: stalix
-  srcname: bin/busybox/ix
-  binname: bin/busybox/ix
-  visiblename: bin/busybox/ix
-  version: 1.36.1
-  origversion: null
-  status: newest
-  maintainers:
-    - anton@samokhvalov.xyz
-  categories:
-    - bin
-  vulnerable: true
 - repo: debian_unstable
   subrepo: sid/main
   srcname: busybox
@@ -2248,13 +2177,68 @@
     - bootc@debian.org
     - debian.axhn@manchmal.in-ulm.de
   vulnerable: true
-- repo: distri
+- repo: deepin_25
+  subrepo: main
   srcname: busybox
-  binname: busybox
+  binnames:
+    - busybox
+    - busybox-static
+    - busybox-udeb
+    - busybox-syslogd
+    - udhcpc
+    - udhcpd
   visiblename: busybox
-  version: 1.31.1
-  origversion: 1.31.1-7
+  version: 1.37.0
+  origversion: 1:1.37.0-10.1deepin3
   status: outdated
+  maintainers:
+    - debian-boot@lists.debian.org
+    - bootc@debian.org
+    - debian.axhn@manchmal.in-ulm.de
+    - mjt@tls.msk.ru
+  vulnerable: true
+- repo: devuan_4_0
+  subrepo: chimaera/main
+  srcname: busybox
+  binnames:
+    - busybox
+    - busybox-static
+    - busybox-udeb
+    - busybox-syslogd
+    - udhcpc
+    - udhcpd
+  visiblename: busybox
+  version: 1.30.1
+  origversion: 1:1.30.1-6
+  status: outdated
+  maintainers:
+    - debian-boot@lists.debian.org
+    - bootc@debian.org
+    - debian.axhn@manchmal.in-ulm.de
+  categories:
+    - utils
+  vulnerable: true
+- repo: devuan_unstable
+  subrepo: unstable/main
+  srcname: busybox
+  binnames:
+    - busybox
+    - busybox-static
+    - busybox-udeb
+    - busybox-syslogd
+    - udhcpc
+    - udhcpd
+  visiblename: busybox
+  version: 1.38.0
+  origversion: 1:1.38.0-3
+  status: devel
+  maintainers:
+    - debian-boot@lists.debian.org
+    - bootc@debian.org
+    - debian.axhn@manchmal.in-ulm.de
+    - mjt@tls.msk.ru
+  categories:
+    - utils
   vulnerable: true
 - repo: epel_8
   srcname: busybox
@@ -2267,6 +2251,23 @@
     - GPLv2
   categories:
     - Unspecified
+  vulnerable: true
+- repo: openmamba
+  subrepo: base
+  srcname: busybox
+  binnames:
+    - busybox
+  visiblename: busybox
+  version: 1.37.0
+  origversion: 1.37.0-1mamba
+  status: outdated
+  summary: Combines tiny versions of many common UNIX utilities into a single small executable
+  maintainers:
+    - silvan@openmamba.org
+  licenses:
+    - GPL
+  categories:
+    - System/Tools
   vulnerable: true
 - repo: epel_9
   srcname: busybox
@@ -2374,6 +2375,15 @@
   categories:
     - Unspecified
   vulnerable: true
+- repo: gnuguix
+  srcname: busybox
+  binname: busybox
+  visiblename: busybox
+  version: 1.37.0
+  origversion: null
+  status: outdated
+  summary: Many common UNIX utilities in a single executable
+  vulnerable: true
 - repo: fedora_40
   subrepo: release
   srcname: busybox
@@ -2409,20 +2419,6 @@
     - GPL-2.0-only
   categories:
     - Unspecified
-  vulnerable: true
-- repo: kaos
-  subrepo: core
-  srcname: busybox
-  binname: busybox
-  visiblename: busybox
-  version: 1.36.1
-  origversion: 1.36.1-2
-  status: newest
-  summary: Base initramfs tools
-  maintainers:
-    - demm@kaosx.us
-  licenses:
-    - GPL
   vulnerable: true
 - repo: fedora_42
   subrepo: release
@@ -2505,18 +2501,6 @@
   categories:
     - sysutils
   vulnerable: true
-- repo: stalix_dev
-  srcname: bin/busybox/ix
-  binname: bin/busybox/ix
-  visiblename: bin/busybox/ix
-  version: 1.36.1
-  origversion: null
-  status: newest
-  maintainers:
-    - anton@samokhvalov.xyz
-  categories:
-    - bin
-  vulnerable: true
 - repo: gentoo
   srcname: sys-apps/busybox
   visiblename: sys-apps/busybox
@@ -2559,24 +2543,6 @@
   categories:
     - sys-apps
   vulnerable: true
-- repo: gnuguix
-  srcname: busybox
-  binname: busybox
-  visiblename: busybox
-  version: 1.37.0
-  origversion: null
-  status: outdated
-  summary: Many common UNIX utilities in a single executable
-  vulnerable: true
-- repo: gobolinux
-  srcname: BusyBox
-  visiblename: BusyBox
-  version: 1.31.1
-  origversion: null
-  status: outdated
-  licenses:
-    - GNU GPL 2
-  vulnerable: true
 - repo: kali_rolling
   subrepo: main
   srcname: busybox
@@ -2598,6 +2564,20 @@
     - mjt@tls.msk.ru
   categories:
     - utils
+  vulnerable: true
+- repo: kaos
+  subrepo: core
+  srcname: busybox
+  binname: busybox
+  visiblename: busybox
+  version: 1.36.1
+  origversion: 1.36.1-2
+  status: newest
+  summary: Base initramfs tools
+  maintainers:
+    - demm@kaosx.us
+  licenses:
+    - GPL
   vulnerable: true
 - repo: kiss_main
   subrepo: core
@@ -2699,6 +2679,27 @@
   categories:
     - Shells
   vulnerable: true
+- repo: pureos_byzantium
+  subrepo: byzantium/main
+  srcname: busybox
+  binnames:
+    - busybox
+    - busybox-static
+    - busybox-syslogd
+    - busybox-udeb
+    - udhcpc
+    - udhcpd
+  visiblename: busybox
+  version: 1.30.1
+  origversion: 1:1.30.1-6
+  status: outdated
+  maintainers:
+    - debian-boot@lists.debian.org
+    - bootc@debian.org
+    - debian.axhn@manchmal.in-ulm.de
+  categories:
+    - utils
+  vulnerable: true
 - repo: mageia_cauldron
   subrepo: core/release
   srcname: busybox
@@ -2716,6 +2717,18 @@
     - Shells
   vulnerable: true
 - repo: manjaro_stable
+  subrepo: core
+  srcname: mkinitcpio-busybox
+  binname: mkinitcpio-busybox
+  visiblename: mkinitcpio-busybox
+  version: 1.36.1
+  origversion: 1.36.1-1
+  status: newest
+  summary: Base initramfs tools
+  licenses:
+    - GPL
+  vulnerable: true
+- repo: manjaro_stable
   subrepo: extra
   srcname: busybox
   binname: busybox
@@ -2727,18 +2740,6 @@
   licenses:
     - GPL-2.0-only
   vulnerable: true
-- repo: manjaro_stable
-  subrepo: core
-  srcname: mkinitcpio-busybox
-  binname: mkinitcpio-busybox
-  visiblename: mkinitcpio-busybox
-  version: 1.36.1
-  origversion: 1.36.1-1
-  status: newest
-  summary: Base initramfs tools
-  licenses:
-    - GPL
-  vulnerable: true
 - repo: manjaro_testing
   subrepo: core
   srcname: mkinitcpio-busybox
@@ -2752,6 +2753,30 @@
     - GPL
   vulnerable: true
 - repo: manjaro_testing
+  subrepo: extra
+  srcname: busybox
+  binname: busybox
+  visiblename: busybox
+  version: 1.36.1
+  origversion: 1.36.1-4
+  status: newest
+  summary: Utilities for rescue and embedded systems
+  licenses:
+    - GPL-2.0-only
+  vulnerable: true
+- repo: manjaro_unstable
+  subrepo: core
+  srcname: mkinitcpio-busybox
+  binname: mkinitcpio-busybox
+  visiblename: mkinitcpio-busybox
+  version: 1.36.1
+  origversion: 1.36.1-1
+  status: newest
+  summary: Base initramfs tools
+  licenses:
+    - GPL
+  vulnerable: true
+- repo: manjaro_unstable
   subrepo: extra
   srcname: busybox
   binname: busybox
@@ -3114,6 +3139,28 @@
   categories:
     - utils
   vulnerable: true
+- repo: pureos_landing
+  subrepo: landing/main
+  srcname: busybox
+  binnames:
+    - busybox
+    - busybox-static
+    - busybox-syslogd
+    - busybox-udeb
+    - udhcpc
+    - udhcpd
+  visiblename: busybox
+  version: 1.37.0
+  origversion: 1:1.37.0-6
+  status: outdated
+  maintainers:
+    - debian-boot@lists.debian.org
+    - bootc@debian.org
+    - debian.axhn@manchmal.in-ulm.de
+    - mjt@tls.msk.ru
+  categories:
+    - utils
+  vulnerable: true
 - repo: openkylin_2_0
   subrepo: nile-proposed/main
   srcname: busybox
@@ -3182,23 +3229,6 @@
     - mjt@tls.msk.ru
   categories:
     - utils
-  vulnerable: true
-- repo: openmamba
-  subrepo: base
-  srcname: busybox
-  binnames:
-    - busybox
-  visiblename: busybox
-  version: 1.37.0
-  origversion: 1.37.0-1mamba
-  status: outdated
-  summary: Combines tiny versions of many common UNIX utilities into a single small executable
-  maintainers:
-    - silvan@openmamba.org
-  licenses:
-    - GPL
-  categories:
-    - System/Tools
   vulnerable: true
 - repo: openmandriva_6_0
   subrepo: main/release
@@ -3287,19 +3317,6 @@
     - System/Base
   vulnerable: true
 - repo: opensuse_leap_15_6
-  subrepo: main/oss
-  srcname: busybox
-  visiblename: busybox
-  version: 1.35.0
-  origversion: 1.35.0-150500.10.3.3
-  status: outdated
-  summary: Minimalist variant of UNIX utilities linked in a single executable
-  licenses:
-    - GPL-2.0-or-later
-  categories:
-    - System/Base
-  vulnerable: true
-- repo: opensuse_leap_15_6
   subrepo: updates/sle
   srcname: busybox
   visiblename: busybox
@@ -3350,6 +3367,19 @@
     - GPL-2.0-or-later
   categories:
     - Unspecified
+  vulnerable: true
+- repo: opensuse_leap_15_6
+  subrepo: main/oss
+  srcname: busybox
+  visiblename: busybox
+  version: 1.35.0
+  origversion: 1.35.0-150500.10.3.3
+  status: outdated
+  summary: Minimalist variant of UNIX utilities linked in a single executable
+  licenses:
+    - GPL-2.0-or-later
+  categories:
+    - System/Base
   vulnerable: true
 - repo: opensuse_tumbleweed
   subrepo: src-oss
@@ -3435,26 +3465,17 @@
   licenses:
     - GPL
   vulnerable: true
-- repo: pardus_21
-  subrepo: main
+- repo: parabola
+  subrepo: extra
   srcname: busybox
-  binnames:
-    - busybox
-    - busybox-static
-    - busybox-udeb
-    - busybox-syslogd
-    - udhcpc
-    - udhcpd
+  binname: busybox
   visiblename: busybox
-  version: 1.30.1
-  origversion: 1:1.30.1-6
-  status: outdated
-  maintainers:
-    - debian-boot@lists.debian.org
-    - bootc@debian.org
-    - debian.axhn@manchmal.in-ulm.de
-  categories:
-    - utils
+  version: 1.36.1
+  origversion: 1.36.1-4
+  status: newest
+  summary: Utilities for rescue and embedded systems
+  licenses:
+    - GPL-2.0-only
   vulnerable: true
 - repo: pardus_21
   subrepo: updates/main
@@ -3469,6 +3490,27 @@
   visiblename: busybox
   version: 1.30.1
   origversion: 1:1.30.1-6+deb11u1
+  status: outdated
+  maintainers:
+    - debian-boot@lists.debian.org
+    - bootc@debian.org
+    - debian.axhn@manchmal.in-ulm.de
+  categories:
+    - utils
+  vulnerable: true
+- repo: pardus_21
+  subrepo: main
+  srcname: busybox
+  binnames:
+    - busybox
+    - busybox-static
+    - busybox-udeb
+    - busybox-syslogd
+    - udhcpc
+    - udhcpd
+  visiblename: busybox
+  version: 1.30.1
+  origversion: 1:1.30.1-6
   status: outdated
   maintainers:
     - debian-boot@lists.debian.org
@@ -3573,93 +3615,6 @@
   categories:
     - utils
   vulnerable: true
-- repo: pureos_byzantium
-  subrepo: byzantium/main
-  srcname: busybox
-  binnames:
-    - busybox
-    - busybox-static
-    - busybox-syslogd
-    - busybox-udeb
-    - udhcpc
-    - udhcpd
-  visiblename: busybox
-  version: 1.30.1
-  origversion: 1:1.30.1-6
-  status: outdated
-  maintainers:
-    - debian-boot@lists.debian.org
-    - bootc@debian.org
-    - debian.axhn@manchmal.in-ulm.de
-  categories:
-    - utils
-  vulnerable: true
-- repo: pureos_landing
-  subrepo: landing/main
-  srcname: busybox
-  binnames:
-    - busybox
-    - busybox-static
-    - busybox-syslogd
-    - busybox-udeb
-    - udhcpc
-    - udhcpd
-  visiblename: busybox
-  version: 1.37.0
-  origversion: 1:1.37.0-6
-  status: outdated
-  maintainers:
-    - debian-boot@lists.debian.org
-    - bootc@debian.org
-    - debian.axhn@manchmal.in-ulm.de
-    - mjt@tls.msk.ru
-  categories:
-    - utils
-  vulnerable: true
-- repo: raspbian_oldstable
-  subrepo: main
-  srcname: busybox
-  binnames:
-    - busybox
-    - busybox-static
-    - busybox-udeb
-    - busybox-syslogd
-    - udhcpc
-    - udhcpd
-  visiblename: busybox
-  version: 1.35.0
-  origversion: 1:1.35.0-4+deb12u1
-  status: outdated
-  maintainers:
-    - debian-boot@lists.debian.org
-    - bootc@debian.org
-    - debian.axhn@manchmal.in-ulm.de
-    - mjt@tls.msk.ru
-  categories:
-    - utils
-  vulnerable: true
-- repo: raspbian_stable
-  subrepo: main
-  srcname: busybox
-  binnames:
-    - busybox
-    - busybox-static
-    - busybox-udeb
-    - busybox-syslogd
-    - udhcpc
-    - udhcpd
-  visiblename: busybox
-  version: 1.37.0
-  origversion: 1:1.37.0-6
-  status: outdated
-  maintainers:
-    - debian-boot@lists.debian.org
-    - bootc@debian.org
-    - debian.axhn@manchmal.in-ulm.de
-    - mjt@tls.msk.ru
-  categories:
-    - utils
-  vulnerable: true
 - repo: raspbian_testing
   subrepo: main
   srcname: busybox
@@ -3682,6 +3637,17 @@
   categories:
     - utils
   vulnerable: true
+- repo: reactos
+  srcname: busybox
+  binname: busybox
+  visiblename: BusyBox
+  version: 1.38.0
+  origversion: null
+  status: devel
+  summary: WIN32 port of BusyBox, a single executable that provides many common Unix tools including a POSIX shell
+  licenses:
+    - GPLv2
+  vulnerable: true
 - repo: rosa_2019_1
   subrepo: main/release
   srcname: busybox
@@ -3703,7 +3669,7 @@
     - Shells
   vulnerable: true
 - repo: rosa_13
-  subrepo: contrib/release
+  subrepo: main/release
   srcname: busybox
   binnames:
     - busybox
@@ -3786,6 +3752,30 @@
   licenses:
     - GPL-2.0-only
   vulnerable: true
+- repo: stalix
+  srcname: bin/busybox/ix
+  binname: bin/busybox/ix
+  visiblename: bin/busybox/ix
+  version: 1.36.1
+  origversion: null
+  status: newest
+  maintainers:
+    - anton@samokhvalov.xyz
+  categories:
+    - bin
+  vulnerable: true
+- repo: stalix_dev
+  srcname: bin/busybox/ix
+  binname: bin/busybox/ix
+  visiblename: bin/busybox/ix
+  version: 1.36.1
+  origversion: null
+  status: newest
+  maintainers:
+    - anton@samokhvalov.xyz
+  categories:
+    - bin
+  vulnerable: true
 - repo: starkos
   subrepo: extra
   srcname: busybox
@@ -3811,6 +3801,29 @@
   categories:
     - base/system
   vulnerable: true
+- repo: ubuntu_26_04
+  subrepo: resolute/main
+  srcname: busybox
+  binnames:
+    - busybox
+    - busybox-static
+    - busybox-initramfs
+    - busybox-udeb
+    - busybox-syslogd
+    - udhcpc
+    - udhcpd
+  visiblename: busybox
+  version: 1.37.0
+  origversion: 1:1.37.0-7ubuntu1
+  status: outdated
+  maintainers:
+    - ubuntu-devel-discuss@lists.ubuntu.com
+    - bootc@debian.org
+    - debian.axhn@manchmal.in-ulm.de
+    - mjt@tls.msk.ru
+  categories:
+    - misc
+  vulnerable: true
 - repo: termux
   srcname: busybox
   binname: busybox
@@ -3821,6 +3834,16 @@
   summary: Tiny versions of many common UNIX utilities into a single small executable
   maintainers:
     - termux@github
+  vulnerable: true
+- repo: tincan
+  subrepo: core
+  srcname: busybox
+  visiblename: busybox
+  version: 1.36.1
+  origversion: null
+  status: newest
+  maintainers:
+    - avs.origami@gmail.com
   vulnerable: true
 - repo: ubuntu_14_04
   subrepo: trusty-updates/main
@@ -3843,6 +3866,20 @@
     - waldi@debian.org
   categories:
     - misc
+  vulnerable: true
+- repo: void_x86_64
+  subrepo: x86_64
+  srcname: busybox
+  binname: busybox-huge
+  visiblename: busybox-huge
+  version: 1.34.1
+  origversion: 1.34.1_12
+  status: outdated
+  summary: Swiss Army Knife of Embedded Linux (extra applets)
+  maintainers:
+    - cam@nohom.org
+  licenses:
+    - GPL-2.0-only
   vulnerable: true
 - repo: ubuntu_14_04
   subrepo: trusty/main
@@ -3911,28 +3948,6 @@
     - misc
   vulnerable: true
 - repo: ubuntu_18_04
-  subrepo: bionic-updates/main
-  srcname: busybox
-  binnames:
-    - busybox
-    - busybox-static
-    - busybox-initramfs
-    - busybox-udeb
-    - busybox-syslogd
-    - udhcpc
-    - udhcpd
-  visiblename: busybox
-  version: 1.27.2
-  origversion: 1:1.27.2-2ubuntu3.4
-  status: outdated
-  maintainers:
-    - ubuntu-devel-discuss@lists.ubuntu.com
-    - bootc@debian.org
-    - debian.axhn@manchmal.in-ulm.de
-  categories:
-    - misc
-  vulnerable: true
-- repo: ubuntu_18_04
   subrepo: bionic/main
   srcname: busybox
   binnames:
@@ -3954,8 +3969,8 @@
   categories:
     - misc
   vulnerable: true
-- repo: ubuntu_20_04
-  subrepo: focal-updates/main
+- repo: ubuntu_18_04
+  subrepo: bionic-updates/main
   srcname: busybox
   binnames:
     - busybox
@@ -3966,8 +3981,8 @@
     - udhcpc
     - udhcpd
   visiblename: busybox
-  version: 1.30.1
-  origversion: 1:1.30.1-4ubuntu6.5
+  version: 1.27.2
+  origversion: 1:1.27.2-2ubuntu3.4
   status: outdated
   maintainers:
     - ubuntu-devel-discuss@lists.ubuntu.com
@@ -3998,8 +4013,8 @@
   categories:
     - misc
   vulnerable: true
-- repo: ubuntu_22_04
-  subrepo: jammy/main
+- repo: ubuntu_20_04
+  subrepo: focal-updates/main
   srcname: busybox
   binnames:
     - busybox
@@ -4011,7 +4026,7 @@
     - udhcpd
   visiblename: busybox
   version: 1.30.1
-  origversion: 1:1.30.1-7ubuntu3
+  origversion: 1:1.30.1-4ubuntu6.5
   status: outdated
   maintainers:
     - ubuntu-devel-discuss@lists.ubuntu.com
@@ -4034,6 +4049,28 @@
   visiblename: busybox
   version: 1.30.1
   origversion: 1:1.30.1-7ubuntu3.1
+  status: outdated
+  maintainers:
+    - ubuntu-devel-discuss@lists.ubuntu.com
+    - bootc@debian.org
+    - debian.axhn@manchmal.in-ulm.de
+  categories:
+    - misc
+  vulnerable: true
+- repo: ubuntu_22_04
+  subrepo: jammy/main
+  srcname: busybox
+  binnames:
+    - busybox
+    - busybox-static
+    - busybox-initramfs
+    - busybox-udeb
+    - busybox-syslogd
+    - udhcpc
+    - udhcpd
+  visiblename: busybox
+  version: 1.30.1
+  origversion: 1:1.30.1-7ubuntu3
   status: outdated
   maintainers:
     - ubuntu-devel-discuss@lists.ubuntu.com
@@ -4134,29 +4171,6 @@
   categories:
     - misc
   vulnerable: true
-- repo: ubuntu_26_04
-  subrepo: resolute/main
-  srcname: busybox
-  binnames:
-    - busybox
-    - busybox-static
-    - busybox-initramfs
-    - busybox-udeb
-    - busybox-syslogd
-    - udhcpc
-    - udhcpd
-  visiblename: busybox
-  version: 1.37.0
-  origversion: 1:1.37.0-7ubuntu1
-  status: outdated
-  maintainers:
-    - ubuntu-devel-discuss@lists.ubuntu.com
-    - bootc@debian.org
-    - debian.axhn@manchmal.in-ulm.de
-    - mjt@tls.msk.ru
-  categories:
-    - misc
-  vulnerable: true
 - repo: ubuntu_26_10
   subrepo: stonking/main
   srcname: busybox
@@ -4224,20 +4238,6 @@
   origversion: 1.34.1_12
   status: outdated
   summary: Swiss Army Knife of Embedded Linux (essential applets)
-  maintainers:
-    - cam@nohom.org
-  licenses:
-    - GPL-2.0-only
-  vulnerable: true
-- repo: void_x86_64
-  subrepo: x86_64
-  srcname: busybox
-  binname: busybox-huge
-  visiblename: busybox-huge
-  version: 1.34.1
-  origversion: 1.34.1_12
-  status: outdated
-  summary: Swiss Army Knife of Embedded Linux (extra applets)
   maintainers:
     - cam@nohom.org
   licenses:

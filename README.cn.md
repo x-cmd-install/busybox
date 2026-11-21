@@ -42,7 +42,7 @@ x install busybox
 
 ## 流行度
 
-- **Star**: 2,193 · **Fork**: 765 · **开放 issue**: 102 · **贡献者**: 254
+- **Star**: 2,193 · **Fork**: 764 · **开放 issue**: 102 · **贡献者**: 254
 
 ## 累计统计
 
@@ -52,16 +52,16 @@ x install busybox
 
 | 时间窗口 | 起始 | 发布 | 已合并 PR | 开放 PR | 已关闭 issue | 开放 issue | 提交 |
 |---|---|---:|---:|---:|---:|---:|---:|
-| 30d | 2026-10-21 | 0 | 0 | 0 | 0 | 1 | 0 |
-| last60d | 2026-09-21 | 0 | 0 | 0 | 0 | 1 | 0 |
-| 90d | 2026-08-22 | 0 | 0 | 0 | 0 | 2 | 0 |
-| last180d | 2026-05-24 | 0 | 0 | 1 | 0 | 7 | 0 |
-| 360d | 2025-11-25 | 0 | 0 | 2 | 1 | 15 | 0 |
-| last720d | 2024-11-30 | 0 | 0 | 2 | 3 | 23 | 0 |
+| 30d | 2026-10-22 | 0 | 0 | 0 | 0 | 1 | 0 |
+| last60d | 2026-09-22 | 0 | 0 | 0 | 0 | 1 | 0 |
+| 90d | 2026-08-23 | 0 | 0 | 0 | 0 | 2 | 0 |
+| last180d | 2026-05-25 | 0 | 0 | 1 | 0 | 7 | 0 |
+| 360d | 2025-11-26 | 0 | 0 | 2 | 1 | 15 | 0 |
+| last720d | 2024-12-01 | 0 | 0 | 2 | 3 | 23 | 0 |
 
 ## 发行版状态
 
-在 [repology.org](https://repology.org/project/busybox) 上共有 **276** 个发行版报告此项目。**89** 个 ✅ 已是最新上游版本，**135** 个 ⚠️ 使用旧版本。
+在 [repology.org](https://repology.org/project/busybox) 上共有 **273** 个发行版报告此项目。**89** 个 ✅ 已是最新上游版本，**133** 个 ⚠️ 使用旧版本。
 
 | 发行版 | 版本 | 状态 |
 |--------|------|------|
@@ -71,7 +71,7 @@ x install busybox
 | Ubuntu 26.04 LTS | `1.37.0` | ⚠️ outdated |
 | Ubuntu 24.04 LTS | `1.36.1` | ✅ latest |
 | Arch | `1.36.1` | ✅ latest |
-| Fedora rawhide | `1.37.0` | ⚠️ outdated |
+| Fedora rawhide | `1.38.0` | devel |
 | Nix unstable | `1.37.0` | ⚠️ outdated |
 | Void | `1.34.1` | ⚠️ outdated |
 | Alpine edge | `1.38.0` | devel |
@@ -86,4 +86,4 @@ busybox 的安装元数据由 [x-cmd/install](https://github.com/x-cmd/install) 
 
 本页面的数据（card / loc / scorecard / release）由 [x-cmd-install-action](https://github.com/x-cmd-install/x-cmd-install-action) 自动采集，每日重新生成。**安装行为**（版本选择、平台差异、依赖处理）的改进应提交到上游索引。
 
-_数据快照: `data/card/261120.yml` · 2026-11-20T08:42:25Z._
+_数据快照: `data/card/261121.yml` · 2026-11-21T07:50:52Z._

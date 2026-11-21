@@ -42,7 +42,7 @@ Lowest-scoring checks:
 
 ## Popularity
 
-- **Stars**: 2,193 · **Forks**: 765 · **Open issues**: 102 · **Contributors**: 254
+- **Stars**: 2,193 · **Forks**: 764 · **Open issues**: 102 · **Contributors**: 254
 
 ## Totals (cumulative)
 
@@ -52,16 +52,16 @@ Lowest-scoring checks:
 
 | Window | Since | Releases | Merged PRs | Open PRs | Closed issues | Open issues | Commits |
 |---|---|---:|---:|---:|---:|---:|---:|
-| 30d | 2026-10-21 | 0 | 0 | 0 | 0 | 1 | 0 |
-| last60d | 2026-09-21 | 0 | 0 | 0 | 0 | 1 | 0 |
-| 90d | 2026-08-22 | 0 | 0 | 0 | 0 | 2 | 0 |
-| last180d | 2026-05-24 | 0 | 0 | 1 | 0 | 7 | 0 |
-| 360d | 2025-11-25 | 0 | 0 | 2 | 1 | 15 | 0 |
-| last720d | 2024-11-30 | 0 | 0 | 2 | 3 | 23 | 0 |
+| 30d | 2026-10-22 | 0 | 0 | 0 | 0 | 1 | 0 |
+| last60d | 2026-09-22 | 0 | 0 | 0 | 0 | 1 | 0 |
+| 90d | 2026-08-23 | 0 | 0 | 0 | 0 | 2 | 0 |
+| last180d | 2026-05-25 | 0 | 0 | 1 | 0 | 7 | 0 |
+| 360d | 2025-11-26 | 0 | 0 | 2 | 1 | 15 | 0 |
+| last720d | 2024-12-01 | 0 | 0 | 2 | 3 | 23 | 0 |
 
 ## Distribution status
 
-Reported by **276** distros on [repology.org](https://repology.org/project/busybox). **89** are ✅ on the latest upstream release, **135** are ⚠️ on an older version.
+Reported by **273** distros on [repology.org](https://repology.org/project/busybox). **89** are ✅ on the latest upstream release, **133** are ⚠️ on an older version.
 
 | Distro | Version | Status |
 |--------|---------|--------|
@@ -71,7 +71,7 @@ Reported by **276** distros on [repology.org](https://repology.org/project/busyb
 | Ubuntu 26.04 LTS | `1.37.0` | ⚠️ outdated |
 | Ubuntu 24.04 LTS | `1.36.1` | ✅ latest |
 | Arch | `1.36.1` | ✅ latest |
-| Fedora rawhide | `1.37.0` | ⚠️ outdated |
+| Fedora rawhide | `1.38.0` | devel |
 | Nix unstable | `1.37.0` | ⚠️ outdated |
 | Void | `1.34.1` | ⚠️ outdated |
 | Alpine edge | `1.38.0` | devel |
@@ -86,4 +86,4 @@ Install metadata for busybox lives in the [x-cmd/install](https://github.com/x-c
 
 The data on this page (card / loc / scorecard / release) is auto-collected by [x-cmd-install-action](https://github.com/x-cmd-install/x-cmd-install-action) and is regenerated daily. Improvements to *install behaviour* (which version gets installed, platform-specific quirks, dependencies) belong upstream in the index.
 
-_Snapshot: `data/card/261120.yml` · 2026-11-20T08:42:25Z._
+_Snapshot: `data/card/261121.yml` · 2026-11-21T07:50:51Z._
